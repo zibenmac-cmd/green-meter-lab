@@ -1,0 +1,1 @@
+{"connections":2,"intentional_data_pause_keeps_tcp":true,"no_automatic_relay_retries":true,"no_commands_on_connect_or_reconnect":true,"offline_and_replay_disabled":true,"passed":true,"physical_relay_state_verified":false,"rapid_duplicate_rejected":true,"received_hex":["21","22","23","24","efbc81","e2809c","23","24"],"source":"native_loopback_command_test_NOT_hardware"}
