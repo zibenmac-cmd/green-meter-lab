@@ -1,0 +1,2 @@
+import {json,readJSON,insert,hash,db} from '../../../lib/server';
+export async function POST(req:Request){try{const bearer=req.headers.get('authorization');const key=await db().prepare('SELECT value FROM settings WHERE id=?').bind('ingest_key_hash').first<{value:string}>();if(!key||!bearer?.startsWith('Bearer ')||await hash(bearer.slice(7))!==key.value)return json({error:'采集密钥无效'},401);const input=await readJSON(req);return json(await insert(Array.isArray(input.readings)?input.readings:[input],'auto'));}catch(e){return json({error:e instanceof Error?e.message:'采集失败'},400);}}

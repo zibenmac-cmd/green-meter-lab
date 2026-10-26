@@ -1,0 +1,21 @@
+import test from 'node:test';import assert from 'node:assert/strict';
+if(process.env.METER_ALLOW_TEST_DB!=='1')throw new Error('仅对空的本地测试数据库运行，需 METER_ALLOW_TEST_DB=1');
+const root=process.env.METER_TEST_URL||'http://127.0.0.1:5173';if(!['127.0.0.1','localhost'].includes(new URL(root).hostname))throw new Error('仅允许本机测试');
+test('YS8000 endpoint: authentication, validation, atomic insert, duplicate/conflict and latest snapshot',async()=>{
+ const anon=await fetch(root+'/api/ys8000');assert.equal(anon.status,401);
+ const sign=await fetch(root+'/signin-with-chatgpt?return_to=/',{redirect:'manual'}),cookie=sign.headers.getSetCookie().map(s=>s.split(';')[0]).join('; ');
+ const request=async(path,body,extra={})=>{const r=await fetch(root+path,{method:body?'POST':'GET',headers:{cookie,...(body?{'Content-Type':'application/json'}:{}),...extra},...(body?{body:JSON.stringify(body)}:{})});return{status:r.status,data:await r.json()}};
+ const empty=await request('/api/ys8000');assert.equal(empty.data.snapshot,null);
+ const keyState=await request('/api/key');assert.equal(keyState.data.configured,false,'需要未配置密钥的可丢弃本地 DB');
+ const key=(await request('/api/key',{})).data.key,authorization='Bearer '+key;
+ const t=Date.now()-10000,rate=6400,n=384,voltage=Array.from({length:n},(_,j)=>230*Math.SQRT2*Math.sin(2*Math.PI*50*j/rate)),current=voltage.map(v=>v/115);
+ const p={device_id:'meter-01',timestamp:new Date(t).toISOString(),power_w:460,energy_kwh:.1,voltage,current,sample_rate_hz:rate,line_hz:50,calibration_confirmed:true,energy_basis:'waveform_integral',session_id:'ys-0123456789',acquisition_duration_s:10,recent_power:[{timestamp:new Date(t).toISOString(),power_w:460}]};
+ assert.equal((await request('/api/ys8000',p,{authorization:'Bearer bad'})).status,401);
+ assert.equal((await request('/api/ys8000',{...p,calibration_confirmed:false},{authorization})).status,400);
+ assert.equal((await request('/api/ys8000',p,{authorization})).data.inserted,1);
+ assert.equal((await request('/api/ys8000',p,{authorization})).data.duplicates,1);
+ assert.equal((await request('/api/ys8000',{...p,power_w:461},{authorization})).status,409);
+ const older={...p,timestamp:new Date(t-10000).toISOString(),energy_kwh:.09,recent_power:[]};assert.equal((await request('/api/ys8000',older,{authorization})).data.inserted,1);
+ const latest=(await request('/api/ys8000')).data.snapshot;assert.equal(latest.timestamp,p.timestamp);assert.equal(latest.recent_power.length,1);assert.equal(latest.energy_basis,'waveform_integral');
+ const rows=(await request('/api/readings')).data;assert.equal(rows.automatic.source,'ys8000:ys-0123456789');assert.equal(rows.automatic.timestamp,p.timestamp);assert.equal(rows.rows.length,2);
+});
