@@ -1,0 +1,1 @@
+{"name":"green-meter-local-automation","private":true,"version":"1.0.0","description":"Local n8n runtime for Green Meter Lab; loopback only.","dependencies":{"n8n":"2.43.8"}}

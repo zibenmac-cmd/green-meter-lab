@@ -1,0 +1,15 @@
+allowBuilds:
+  '@confluentinc/kafka-javascript': false
+  '@parcel/watcher': false
+  '@scarf/scarf': false
+  '@sentry/node-cpu-profiler': false
+  '@sentry/node-native-stacktrace': false
+  agent-browser: false
+  cpu-features: false
+  isolated-vm: false
+  msgpackr-extract: false
+  oracledb: false
+  protobufjs: false
+  sqlite3: true
+  ssh2: false
+  vue-demi: false
