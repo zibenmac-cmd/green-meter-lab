@@ -1,0 +1,18 @@
+{
+  "app_version": "1.1.0",
+  "source": "native_app_device_capture",
+  "host": "192.168.1.2",
+  "port": 8266,
+  "last_frame_local": "2026-10-20 16:01:00 Asia/Shanghai",
+  "bytes": 491181,
+  "sha256": "4162b2305e0a6491ca75e605c565d6c0fa3de67dcfabbde5bd9f41af86a8f1ab",
+  "valid_frames": 941,
+  "invalid_frames": 0,
+  "discarded_bytes": 3743,
+  "samples_per_channel": 120448,
+  "calibrated": false,
+  "sample_rate_verified": false,
+  "captured_by": "user operated new native application; observed UI and exported original BIN",
+  "raw_file": "20261020-新版实物读取-941帧.bin",
+  "diagnostic_file": "20261020-新版实物读取-诊断.json"
+}
