@@ -1,0 +1,17 @@
+{
+  "verified_on": "2026-10-21",
+  "source": "desktop_sync_roundtrip_NOT_hardware",
+  "local_session": "A4C86C26-80A4-4FCC-A72C-0D122D5EAFE5",
+  "cloud_folder_id": "1WIiSJSlsbXsU5KjoRvq9FaOlergl0-_2",
+  "cloud_folder_url": "https://drive.google.com/drive/folders/1WIiSJSlsbXsU5KjoRvq9FaOlergl0-_2",
+  "cloud_files": 5,
+  "local_directory": "/Users/ahaoxiao/Library/CloudStorage/GoogleDrive-ziben.mac@gmail.com/我的云端硬盘/绿电实验室/采集数据",
+  "shared": false,
+  "cloud_readback_verified": {
+    "matches": true,
+    "session": "A4C86C26-80A4-4FCC-A72C-0D122D5EAFE5",
+    "source": "loopback_test_NOT_hardware",
+    "saved_raw_bytes": 6,
+    "closed": true
+  }
+}

@@ -4,16 +4,16 @@
 
 ## 从哪里开始
 
-- **当前 Mac 版：** [1.4 源码](archive/mac/v1.4.0/Source/)、[使用说明](archive/mac/v1.4.0/使用说明.md)、[测试报告](archive/mac/v1.4.0/测试报告.md)。
-- **全部安装包：** [releases](releases/)，包含 Mac 1.0–1.4、独立 IP 测试器、离线连接工具、早期接入包及网页源码包。
+- **当前 Mac 版：** [1.5 源码](archive/mac/v1.5.0/Source/)、[使用说明](archive/mac/v1.5.0/使用说明.md)、[测试报告](archive/mac/v1.5.0/测试报告.md)。
+- **全部安装包：** [releases](releases/)，包含 Mac 1.0–1.5、独立 IP 测试器、离线连接工具、早期接入包及网页源码包。
 - **全部版本索引：** [VERSIONS.md](VERSIONS.md)。原始 ZIP 按字节保留，校验值见 [ARCHIVE_MANIFEST.json](ARCHIVE_MANIFEST.json)。
 - **网页版：** 根目录 app/、lib/、db/、adapters/ 等保留原工程布局；[原网页版说明](archive/web/README-original.md)。
 - **本地 n8n：** [archive/automation/n8n-local](archive/automation/n8n-local/)，包含模板、启动脚本及测试。
-- **电器模型调研：** [GitHub 调研报告](archive/mac/v1.4.0/GitHub电器识别模型调研.md)。
+- **电器模型调研：** [GitHub 调研报告](archive/mac/v1.5.0/GitHub电器识别模型调研.md)。
 
 ## 当前功能和限制
 
-Mac 1.4 支持 192.168.1.2:8266 的已核对波形解析、本地保存、Drive 同步、手动供电/采集指令及参考瓦数。参考 W 尚未完成实物标定；6400 Hz 为配置值；继电器输出未被软件独立核实。第三方电器分类模型尚未接入和验证。
+Mac 1.5 支持 192.168.1.2:8266 的已核对波形解析、本地保存、Drive 同步、手动供电/采集指令及参考瓦数。参考 W 尚未完成实物标定；6400 Hz 为配置值；继电器输出未被软件独立核实。本机学习分类器已接入，需采集人工标记的真实样本并通过按段验证后启用；尚无用户电器的实物识别验证。第三方预训练模型未接入。
 
 历史版本的说明保留当时状态，其中旧 IP、旧协议假设和 W 留空等不代表最新版行为。早期 YS8000 网页适配器不适用于已经核对的 socket128 报文，应按版本说明使用。
 
