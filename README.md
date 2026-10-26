@@ -43,3 +43,11 @@ node --import ./scripts/sites-env.mjs ./node_modules/wrangler/bin/wrangler.js d1
 - 在线状态只由自动记录的采集时间判断，超过 60 秒显示中断。CSV 导入不会使设备显示在线。
 
 参见同目录 `接入说明.md`；适配程序在 `adapters/send_readings.py`。未实现自动邮件、远程断电、积分兑换或多宿舍管理。真实电表尚待采购，网页接口验证不等同于硬件连接验证。
+
+## YS8000 与模型模块
+
+新增“波形实验”，支持 I,V,label CSV、6400 Hz 配置、有效值/有功功率/PF/谐波/V-I 分析。提供浏览器 KNN 训练与 JSON 导入导出，以及 AR(6) 未来 30 秒功率预测。硬件尚未到位，帧格式和标定需实测确认。详见 [YS8000 接入指南](public/hardware/YS8000接入指南.md)。
+
+`POST /api/ys8000` 沿用采集密钥和私有站点边界；最新波形与最近 180 秒功率摘要保存在 settings 的 ys8000:latest，用电摘要标记 source=ys8000:会话编号，每 10 秒一条，无需数据库结构迁移。
+
+验证：`node --test tests/meter.test.mjs tests/waveform.test.mjs`；`python3 -m unittest discover -s tests -p test_ys8000.py`。接口测试 `tests/ys8000-api.test.mjs` 只允许空的本机数据库，需 METER_ALLOW_TEST_DB=1。

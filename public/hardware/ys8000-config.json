@@ -1,0 +1,18 @@
+{
+  "device_id": "meter-01",
+  "host": "192.168.1.2",
+  "port": 8266,
+  "points_per_cycle": 128,
+  "line_hz": 50,
+  "sample_rate_hz": 6400,
+  "header_hex": "",
+  "trailer_hex": "",
+  "byte_order": "little",
+  "voltage_scale": 1.935205,
+  "current_scale": 0.011848,
+  "voltage_offset_adc": 0,
+  "current_offset_adc": 0,
+  "current_sign": 1,
+  "frame_format_confirmed": false,
+  "calibration_confirmed": false
+}

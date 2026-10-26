@@ -7,5 +7,5 @@ const data=await db().prepare(query+' AND timestamp>=? AND timestamp<=? ORDER BY
 if(data.results.length>300000)return json({error:'记录过多，请缩小日期范围'},400);
 const previous=await db().prepare(query+' AND timestamp<? ORDER BY timestamp DESC LIMIT 1').bind('meter-01',start).first();
 const latest=await db().prepare(query+' ORDER BY timestamp DESC LIMIT 1').bind('meter-01').first();
-const automatic=await db().prepare(query+" AND source='auto' ORDER BY timestamp DESC LIMIT 1").bind('meter-01').first();
+const automatic=await db().prepare(query+" AND (source='auto' OR source LIKE 'ys8000%') ORDER BY timestamp DESC LIMIT 1").bind('meter-01').first();
 return json({rows:previous?[previous,...data.results]:data.results,latest,automatic});}catch{return json({error:'读取失败，请检查数据库连接'},503);}}
