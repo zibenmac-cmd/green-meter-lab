@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0"><dict>
+<key>CFBundleName</key><string>插座IP读取测试器</string>
+<key>CFBundleDisplayName</key><string>插座 IP 读取测试器</string>
+<key>CFBundleIdentifier</key><string>local.socketprobe.reader</string>
+<key>CFBundleExecutable</key><string>SocketIPProbe</string>
+<key>CFBundlePackageType</key><string>APPL</string>
+<key>CFBundleShortVersionString</key><string>1.0.1</string>
+<key>CFBundleVersion</key><string>2</string>
+<key>CFBundleIconFile</key><string>AppIcon</string>
+<key>LSMinimumSystemVersion</key><string>13.0</string>
+<key>NSHighResolutionCapable</key><true/>
+<key>NSLocalNetworkUsageDescription</key><string>测试你指定的插座局域网 IP 和 TCP 端口，接收原始设备回复并保存到本机。</string>
+<key>NSHumanReadableCopyright</key><string>独立本机 TCP 测试器。YS8000 命令依据用户提供的手册，设备兼容待实测。</string>
+</dict></plist>
