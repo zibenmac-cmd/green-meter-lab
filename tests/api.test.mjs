@@ -1,0 +1,23 @@
+import test from 'node:test';import assert from 'node:assert/strict';
+if(process.env.METER_ALLOW_TEST_DB!=='1')throw new Error('仅对空的、可丢弃的本地数据库运行；需设置 METER_ALLOW_TEST_DB=1');
+const root=process.env.METER_TEST_URL||'http://127.0.0.1:5173';
+if(!['127.0.0.1','localhost'].includes(new URL(root).hostname))throw new Error('该集成测试只允许本地测试数据库');
+let cookie='',key='';const read=async(path,body,headers={})=>{const r=await fetch(root+path,{method:body?'POST':'GET',headers:{cookie,...(body?{'Content-Type':'application/json'}:{}),...headers},...(body?{body:JSON.stringify(body)}:{})});const text=await r.text();let data;try{data=JSON.parse(text)}catch{data={error:text}}return {r,data};};
+test('本地接口完整流程：身份、密钥、导入、去重、校验',async()=>{
+ const anon=await fetch(root+'/api/readings');assert.equal(anon.status,401);
+ const sign=await fetch(root+'/signin-with-chatgpt?return_to=/',{redirect:'manual'});cookie=sign.headers.getSetCookie().map(s=>s.split(';')[0]).join('; ');assert.ok(cookie);
+ const c=await read('/api/config');assert.equal(c.r.status,200);assert.equal(c.data.deviceId,'meter-01');
+ const rejected=await read('/api/key',{}, {origin:'https://untrusted.example'});assert.ok([401,403].includes(rejected.r.status));
+ const k=await read('/api/key',{});assert.equal(k.r.status,200);assert.ok(k.data.key);key=k.data.key;
+ const timestamp=new Date(Date.now()-10000).toISOString();const record={device_id:'meter-01',timestamp,power_w:650,energy_kwh:120.4};
+ const bad=await read('/api/ingest',record,{authorization:'Bearer wrong'});assert.equal(bad.r.status,401);
+ const incoming=await read('/api/ingest',record,{authorization:'Bearer '+key});assert.equal(incoming.r.status,200);assert.equal(incoming.data.inserted,1);
+ const duplicate=await read('/api/ingest',record,{authorization:'Bearer '+key});assert.equal(duplicate.data.inserted,0);assert.equal(duplicate.data.duplicates,1);
+ const historical={...record,timestamp:'2026-10-01T00:00:00+08:00',energy_kwh:100};
+ const imported=await read('/api/import',{readings:[historical]});assert.equal(imported.data.inserted,1);
+ const invalid=await read('/api/import',{readings:[{...historical,timestamp:'2026-10-02T00:00:00+08:00'}, {...record,power_w:-1}]});assert.equal(invalid.r.status,400);
+ const data=await read('/api/readings?from=2026-10-01&to=2026-10-05');assert.equal(data.r.status,200);assert.equal(data.data.rows.filter(r=>r.source==='auto').length,1);assert.equal(data.data.rows.filter(r=>r.source==='import').length,1);assert.equal(data.data.automatic.timestamp,timestamp);assert.ok(!data.data.rows.some(r=>r.timestamp==='2026-10-01T16:00:00.000Z'));
+ const fields=data.data.rows[0];for(const field of ['device_id','timestamp','power_w','energy_kwh','source'])assert.ok(field in fields);
+ const range=await read('/api/readings?from=2026-01-01&to=2026-10-05');assert.equal(range.r.status,400);
+ const key2=await read('/api/key',{});assert.notEqual(key2.data.key,key);const old=await read('/api/ingest',record,{authorization:'Bearer '+key});assert.equal(old.r.status,401);
+});
