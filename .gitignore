@@ -47,3 +47,16 @@ next-env.d.ts
 
 *.tsbuildinfo
 __pycache__/
+
+# Local acquisition, credentials and generated native output
+**/runtime-data/
+**/node_modules/
+**/.build/
+**/*.app/
+**/__pycache__/
+**/reference-power-settings.json
+**/receiver-path.txt
+*.sqlite
+*.sqlite-*
+*.db
+/archive/**/build/

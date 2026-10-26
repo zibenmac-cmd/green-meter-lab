@@ -1,0 +1,1827 @@
+{
+  "archive_date": "2026-10-26",
+  "original_web_commits": [
+    "ca7f752635b8f12306e919db3265a14411eb714c",
+    "85233aca6cb85a4fbc15067212d3bbd03253e301",
+    "06ab3e94c208848fcfa2af03380bf9f850a7643e"
+  ],
+  "packages": [
+    {
+      "name": "Mac 1.0：原生采集与离线波形",
+      "tag": "mac-v1.0.0",
+      "source": "archive/mac/v1.0.0",
+      "package": "releases/绿电实验室Mac版.zip",
+      "bytes": 692431,
+      "sha256": "a556c96ca5b4365ad2e48c5c54df32c92b2d1ec8d089dfd5050550f1dc823204",
+      "extracted_files": [
+        {
+          "path": "archive/mac/v1.0.0/Source/Protocol.swift",
+          "bytes": 12959,
+          "sha256": "4af0d5c80511be9a739168e51a5292d948a222dfd27ddfd0eabed542cddb56ff"
+        },
+        {
+          "path": "archive/mac/v1.0.0/Source/index.html",
+          "bytes": 28934,
+          "sha256": "20f87821fa8ebbf6f7f491d9c78277dddf085c4361ade094bad83458d9104be9"
+        },
+        {
+          "path": "archive/mac/v1.0.0/Source/AppIcon.icns",
+          "bytes": 84058,
+          "sha256": "bf69afe387d17443715ac2a78cb5dc9f855e37428f9a3ecb77852340ac704ffc"
+        },
+        {
+          "path": "archive/mac/v1.0.0/Source/main.swift",
+          "bytes": 108,
+          "sha256": "3da4c6253566508bcec4450be74f6bb0a27d0aa90f9925210430566503b2192e"
+        },
+        {
+          "path": "archive/mac/v1.0.0/Source/App.swift",
+          "bytes": 31130,
+          "sha256": "dffb3759f9f91e3697c1e001931ac9b7a5842c2165b33aa3662401a1032d61a4"
+        },
+        {
+          "path": "archive/mac/v1.0.0/Source/Info.plist",
+          "bytes": 1153,
+          "sha256": "1b4c4ac3006b89a24705d641d0b3cd5726617906cb45f66a18ccfb0b7ef5cc03"
+        },
+        {
+          "path": "archive/mac/v1.0.0/Tests/mock_device.py",
+          "bytes": 3718,
+          "sha256": "c094b04118b814a50da978d04b52ad1c9c6f5ebdb0eb60b1c88dbd22925124e1"
+        },
+        {
+          "path": "archive/mac/v1.0.0/Tests/main.swift",
+          "bytes": 4999,
+          "sha256": "93e595587302a9e86589da5e2f587cfa39045192cd572bc7f00c049bdc1b5082"
+        },
+        {
+          "path": "archive/mac/v1.0.0/Tests/Fixtures/最终版模拟采集摘要.csv",
+          "bytes": 3420,
+          "sha256": "939109fbadc17dbe2775ad4df048f54886ca03d2c6350a821188c1625b484175"
+        },
+        {
+          "path": "archive/mac/v1.0.0/Tests/Fixtures/测试用模拟采集波形.csv",
+          "bytes": 28141,
+          "sha256": "f0676a07e4ac83a1d5b4e1491efa7a32865eab22cfc883d0defa25083f78a71b"
+        },
+        {
+          "path": "archive/mac/v1.0.0/Tests/Fixtures/expected.json",
+          "bytes": 186,
+          "sha256": "2af8e3b345951b61cea2374eda9a1fcb07172b194f43652850da13064a9ed2d5"
+        },
+        {
+          "path": "archive/mac/v1.0.0/Tests/Fixtures/模拟电表波形.csv",
+          "bytes": 31981,
+          "sha256": "d3c2def216bbc896f280ede3dc817fe1d7982187887989915e49f9cc5f5b662b"
+        },
+        {
+          "path": "archive/mac/v1.0.0/Tests/Fixtures/模拟原机报文.bin",
+          "bytes": 5950,
+          "sha256": "9d013e0100ca7c25a1c233527db2db7a3b78a2468dc6c4d04962d2f436205857"
+        },
+        {
+          "path": "archive/mac/v1.0.0/Tests/Fixtures/测试用模拟采集摘要.csv",
+          "bytes": 12588,
+          "sha256": "b6dc6ec6b87c6392badc1c7c1aa72587f62a1cd3921056397f43d172cb880ed2"
+        },
+        {
+          "path": "archive/mac/v1.0.0/Tests/Fixtures/测试用模拟采集原始报文.bin",
+          "bytes": 2097152,
+          "sha256": "1d07685e324543cbf78fcbfe3ab354f271e4a1b4177d7eea1211b8f5a7db5274"
+        },
+        {
+          "path": "archive/mac/v1.0.0/使用说明.md",
+          "bytes": 8393,
+          "sha256": "e927ae0dd5ad7ae44d1d46146c73c2019f52567492098e8b654f3952d3ba8a70"
+        },
+        {
+          "path": "archive/mac/v1.0.0/测试报告.md",
+          "bytes": 2693,
+          "sha256": "78af0a67336c7ca61a639f6f43112b9bceb54cfeb79fb26f78ef25c5e1d5ef81"
+        },
+        {
+          "path": "archive/mac/v1.0.0/build.sh",
+          "bytes": 1073,
+          "sha256": "52ee8d1b06954c4ced4ef380bda8b151aa5d59896030832ec91600a48061de6a"
+        },
+        {
+          "path": "archive/mac/v1.0.0/界面预览.png",
+          "bytes": 322039,
+          "sha256": "f59de7b6000b6fd25f0f9d903a1af2a80443e1c68e5fbc20fd308580a976357c"
+        }
+      ]
+    },
+    {
+      "name": "Mac 1.1：实物 128 对采样协议",
+      "tag": "mac-v1.1.0",
+      "source": "archive/mac/v1.1.0",
+      "package": "releases/绿电实验室Mac版-1.1.0.zip",
+      "bytes": 760438,
+      "sha256": "04dd3a555454e6a5e1c737c35374f39b8429a526974ef5271c31e7124ace91a2",
+      "extracted_files": [
+        {
+          "path": "archive/mac/v1.1.0/Evidence/20261020-新版实物读取-941帧.bin",
+          "bytes": 491181,
+          "sha256": "4162b2305e0a6491ca75e605c565d6c0fa3de67dcfabbde5bd9f41af86a8f1ab"
+        },
+        {
+          "path": "archive/mac/v1.1.0/Evidence/20261020-新版实物读取-核对.json",
+          "bytes": 646,
+          "sha256": "e18dd25adb1b284f8f09459b068af18fdc2057a4417475770d5cdbc6b03391aa"
+        },
+        {
+          "path": "archive/mac/v1.1.0/Evidence/20261020-新版实物读取-诊断.json",
+          "bytes": 1109,
+          "sha256": "e37ebfad3b593565c72950310e6f1755d8679d9a3ec4a2af68105197b1dd0b90"
+        },
+        {
+          "path": "archive/mac/v1.1.0/Evidence/F251D351-实测原始.bin",
+          "bytes": 126906,
+          "sha256": "f68a7366b80d76643a9cad2949d91a30f0b2e8874cddbee6e0b807272e2f6aad"
+        },
+        {
+          "path": "archive/mac/v1.1.0/Evidence/F251D351-解析核对.json",
+          "bytes": 737,
+          "sha256": "669905cdc8d81eed728b6b77b8685601c095d89e72218a6dd4df6c068889cfb8"
+        },
+        {
+          "path": "archive/mac/v1.1.0/Source/App.swift",
+          "bytes": 33644,
+          "sha256": "7f2e9d4e106bb65be7c95cc5dbe14731406e872992467eb25fa2883bd58f7337"
+        },
+        {
+          "path": "archive/mac/v1.1.0/Source/AppIcon.icns",
+          "bytes": 84058,
+          "sha256": "bf69afe387d17443715ac2a78cb5dc9f855e37428f9a3ecb77852340ac704ffc"
+        },
+        {
+          "path": "archive/mac/v1.1.0/Source/Info.plist",
+          "bytes": 1155,
+          "sha256": "bd2ab8295f18e0c1a7c6e5934878d471f6a788f617353c4f7aab798e14cf0cf2"
+        },
+        {
+          "path": "archive/mac/v1.1.0/Source/Protocol.swift",
+          "bytes": 15921,
+          "sha256": "ea2668b62572f30417f516d1da26837eba143350e38514efed8ce64a8a01b46c"
+        },
+        {
+          "path": "archive/mac/v1.1.0/Source/index.html",
+          "bytes": 31109,
+          "sha256": "7cf9bc274e36b5035fbf0e912360965be83f7e249022bc474e30371fed8149e9"
+        },
+        {
+          "path": "archive/mac/v1.1.0/Source/main.swift",
+          "bytes": 108,
+          "sha256": "3da4c6253566508bcec4450be74f6bb0a27d0aa90f9925210430566503b2192e"
+        },
+        {
+          "path": "archive/mac/v1.1.0/Tests/Fixtures/expected.json",
+          "bytes": 186,
+          "sha256": "2af8e3b345951b61cea2374eda9a1fcb07172b194f43652850da13064a9ed2d5"
+        },
+        {
+          "path": "archive/mac/v1.1.0/Tests/Fixtures/模拟原机报文.bin",
+          "bytes": 5950,
+          "sha256": "9d013e0100ca7c25a1c233527db2db7a3b78a2468dc6c4d04962d2f436205857"
+        },
+        {
+          "path": "archive/mac/v1.1.0/Tests/Fixtures/模拟电表波形.csv",
+          "bytes": 31981,
+          "sha256": "d3c2def216bbc896f280ede3dc817fe1d7982187887989915e49f9cc5f5b662b"
+        },
+        {
+          "path": "archive/mac/v1.1.0/Tests/main.swift",
+          "bytes": 7969,
+          "sha256": "e72539a4a9ae41f84e67c75179919b149ae65724f0a3ade6b773c2b3269cfe57"
+        },
+        {
+          "path": "archive/mac/v1.1.0/Tests/mock_device.py",
+          "bytes": 3718,
+          "sha256": "c094b04118b814a50da978d04b52ad1c9c6f5ebdb0eb60b1c88dbd22925124e1"
+        },
+        {
+          "path": "archive/mac/v1.1.0/build.sh",
+          "bytes": 1143,
+          "sha256": "ad4c36ceaee14eda5c898ce8a24f58f2b4c346ff2c99731c901655bea9ea27a1"
+        },
+        {
+          "path": "archive/mac/v1.1.0/docs/1.0-使用说明.md",
+          "bytes": 8393,
+          "sha256": "e927ae0dd5ad7ae44d1d46146c73c2019f52567492098e8b654f3952d3ba8a70"
+        },
+        {
+          "path": "archive/mac/v1.1.0/docs/1.0-测试报告.md",
+          "bytes": 2693,
+          "sha256": "78af0a67336c7ca61a639f6f43112b9bceb54cfeb79fb26f78ef25c5e1d5ef81"
+        },
+        {
+          "path": "archive/mac/v1.1.0/使用说明.md",
+          "bytes": 4699,
+          "sha256": "d4279ba4151c989e1daaff54f9f67a925606b7a070b93ce579bb5b7b3bc2d87b"
+        },
+        {
+          "path": "archive/mac/v1.1.0/实测报文分析.md",
+          "bytes": 2158,
+          "sha256": "2092b0c1d89c5a9fa3b69547fb83d79ffbb3229c6142c08f45ae169557e419e1"
+        },
+        {
+          "path": "archive/mac/v1.1.0/测试报告.md",
+          "bytes": 2646,
+          "sha256": "21c6f0f7c4b4ca77167d49cc8ee200b138ab7539367f78178516abc582bad6c2"
+        }
+      ]
+    },
+    {
+      "name": "Mac 1.2：自动保存、重连与 Drive 同步",
+      "tag": "mac-v1.2.0",
+      "source": "archive/mac/v1.2.0",
+      "package": "releases/绿电实验室Mac版-1.2.0.zip",
+      "bytes": 1090920,
+      "sha256": "6e6f6daf3cff8861b2b37da80c46f7f534955d371774409d8e6c2bc7787786b0",
+      "extracted_files": [
+        {
+          "path": "archive/mac/v1.2.0/Automation/normalize-summary.cjs",
+          "bytes": 2869,
+          "sha256": "15ca9c4ecfaf2e9ebde8ec491c076e138bfc192812bb2abb4fa5b0ca19cb69c6"
+        },
+        {
+          "path": "archive/mac/v1.2.0/Automation/test-receiver.cjs",
+          "bytes": 1481,
+          "sha256": "b02c35c7fe9ae72c107af87ac82f31ebe09bf7396d4943bcb79dcbd2b85f8b96"
+        },
+        {
+          "path": "archive/mac/v1.2.0/Automation/本地n8n说明.md",
+          "bytes": 2683,
+          "sha256": "56057c58a080833e450d87e71abc790ea2e77db532acf84d8dc01331253c2cec"
+        },
+        {
+          "path": "archive/mac/v1.2.0/Automation/绿电实验室-接收流程-模板.json",
+          "bytes": 4829,
+          "sha256": "a87a4049794f4b9c31745f8a645a947be543b4f2dba54f133ed831495c462572"
+        },
+        {
+          "path": "archive/mac/v1.2.0/Evidence/1.2-Drive云端验证.json",
+          "bytes": 680,
+          "sha256": "ea7a5bdc5618c2ff46064ac5501af0f2c781c78498389cb87e65e2af4a9dbdb6"
+        },
+        {
+          "path": "archive/mac/v1.2.0/Evidence/1.2-n8n接收验证.json",
+          "bytes": 2087,
+          "sha256": "0076fbcf2a53ee1b1611cd8bbb9111811fe56016184909a541dc5ac5c6aa619a"
+        },
+        {
+          "path": "archive/mac/v1.2.0/Evidence/1.2-原生采集到n8n验证.json",
+          "bytes": 228,
+          "sha256": "abd6fbe8901aa4dce19171076dcf4eec5c4756990c387f8ff52d4364e2b2bffe"
+        },
+        {
+          "path": "archive/mac/v1.2.0/Evidence/1.2-断线重连验证.json",
+          "bytes": 959,
+          "sha256": "109f1c5948f23afc86c034a943cdbcf9e064246cff2570ea2ee6c65c822be071"
+        },
+        {
+          "path": "archive/mac/v1.2.0/Evidence/1.2-模拟服务接收命令核对.json",
+          "bytes": 69,
+          "sha256": "3eb3440dd477379365ab8ea53eb7532c8ca03a8a0dd24a857a9ab1a28c82f71d"
+        },
+        {
+          "path": "archive/mac/v1.2.0/Evidence/20261020-新版实物读取-941帧.bin",
+          "bytes": 491181,
+          "sha256": "4162b2305e0a6491ca75e605c565d6c0fa3de67dcfabbde5bd9f41af86a8f1ab"
+        },
+        {
+          "path": "archive/mac/v1.2.0/Evidence/20261020-新版实物读取-核对.json",
+          "bytes": 646,
+          "sha256": "e18dd25adb1b284f8f09459b068af18fdc2057a4417475770d5cdbc6b03391aa"
+        },
+        {
+          "path": "archive/mac/v1.2.0/Evidence/20261020-新版实物读取-诊断.json",
+          "bytes": 1109,
+          "sha256": "e37ebfad3b593565c72950310e6f1755d8679d9a3ec4a2af68105197b1dd0b90"
+        },
+        {
+          "path": "archive/mac/v1.2.0/Evidence/F251D351-实测原始.bin",
+          "bytes": 126906,
+          "sha256": "f68a7366b80d76643a9cad2949d91a30f0b2e8874cddbee6e0b807272e2f6aad"
+        },
+        {
+          "path": "archive/mac/v1.2.0/Evidence/F251D351-解析核对.json",
+          "bytes": 737,
+          "sha256": "669905cdc8d81eed728b6b77b8685601c095d89e72218a6dd4df6c068889cfb8"
+        },
+        {
+          "path": "archive/mac/v1.2.0/Source/App.swift",
+          "bytes": 44815,
+          "sha256": "276b001ccc40d6c07bd1295243773ea6e2f7527a9b30498226ec50d2f02f0e22"
+        },
+        {
+          "path": "archive/mac/v1.2.0/Source/AppIcon.icns",
+          "bytes": 84058,
+          "sha256": "bf69afe387d17443715ac2a78cb5dc9f855e37428f9a3ecb77852340ac704ffc"
+        },
+        {
+          "path": "archive/mac/v1.2.0/Source/Info.plist",
+          "bytes": 1155,
+          "sha256": "039ec6802107621f168f8cde785daf29a96e408a606e38db0cc496b6e652c232"
+        },
+        {
+          "path": "archive/mac/v1.2.0/Source/Protocol.swift",
+          "bytes": 16060,
+          "sha256": "3b5ae823948b49048aa928a9039b2a7b4bf25ee682422c5fd6ebc0e8eded5068"
+        },
+        {
+          "path": "archive/mac/v1.2.0/Source/Storage.swift",
+          "bytes": 13913,
+          "sha256": "4161cef94e9017076d713ab12a7ea58465712cc57d27db2f52e7ed82c557b28a"
+        },
+        {
+          "path": "archive/mac/v1.2.0/Source/index.html",
+          "bytes": 34230,
+          "sha256": "fdbb032a22b7acefe1ecf17264cda9b26559190510da9a87d4ec7ccd6c5fddaf"
+        },
+        {
+          "path": "archive/mac/v1.2.0/Source/main.swift",
+          "bytes": 108,
+          "sha256": "3da4c6253566508bcec4450be74f6bb0a27d0aa90f9925210430566503b2192e"
+        },
+        {
+          "path": "archive/mac/v1.2.0/Tests/Fixtures/1.1-实物读取-941帧.bin",
+          "bytes": 491181,
+          "sha256": "4162b2305e0a6491ca75e605c565d6c0fa3de67dcfabbde5bd9f41af86a8f1ab"
+        },
+        {
+          "path": "archive/mac/v1.2.0/Tests/Fixtures/expected.json",
+          "bytes": 186,
+          "sha256": "2af8e3b345951b61cea2374eda9a1fcb07172b194f43652850da13064a9ed2d5"
+        },
+        {
+          "path": "archive/mac/v1.2.0/Tests/Fixtures/最终版模拟采集摘要.csv",
+          "bytes": 3420,
+          "sha256": "939109fbadc17dbe2775ad4df048f54886ca03d2c6350a821188c1625b484175"
+        },
+        {
+          "path": "archive/mac/v1.2.0/Tests/Fixtures/模拟原机报文.bin",
+          "bytes": 5950,
+          "sha256": "9d013e0100ca7c25a1c233527db2db7a3b78a2468dc6c4d04962d2f436205857"
+        },
+        {
+          "path": "archive/mac/v1.2.0/Tests/Fixtures/模拟电表波形.csv",
+          "bytes": 31981,
+          "sha256": "d3c2def216bbc896f280ede3dc817fe1d7982187887989915e49f9cc5f5b662b"
+        },
+        {
+          "path": "archive/mac/v1.2.0/Tests/Fixtures/测试用模拟采集原始报文.bin",
+          "bytes": 2097152,
+          "sha256": "1d07685e324543cbf78fcbfe3ab354f271e4a1b4177d7eea1211b8f5a7db5274"
+        },
+        {
+          "path": "archive/mac/v1.2.0/Tests/Fixtures/测试用模拟采集摘要.csv",
+          "bytes": 12588,
+          "sha256": "b6dc6ec6b87c6392badc1c7c1aa72587f62a1cd3921056397f43d172cb880ed2"
+        },
+        {
+          "path": "archive/mac/v1.2.0/Tests/Fixtures/测试用模拟采集波形.csv",
+          "bytes": 28141,
+          "sha256": "f0676a07e4ac83a1d5b4e1491efa7a32865eab22cfc883d0defa25083f78a71b"
+        },
+        {
+          "path": "archive/mac/v1.2.0/Tests/Fixtures/设备诊断.json",
+          "bytes": 1109,
+          "sha256": "e37ebfad3b593565c72950310e6f1755d8679d9a3ec4a2af68105197b1dd0b90"
+        },
+        {
+          "path": "archive/mac/v1.2.0/Tests/StorageTests.swift",
+          "bytes": 6318,
+          "sha256": "ea65469b0e9278193eaed21d4d7af5022f56ff07b1cc2536c249e8f6828fe657"
+        },
+        {
+          "path": "archive/mac/v1.2.0/Tests/main.swift",
+          "bytes": 8008,
+          "sha256": "392c148fa3d9c9c4373615569fb37b789eb3f263a66ab6cebec715bb3c6c8f21"
+        },
+        {
+          "path": "archive/mac/v1.2.0/Tests/mock_device.py",
+          "bytes": 3718,
+          "sha256": "c094b04118b814a50da978d04b52ad1c9c6f5ebdb0eb60b1c88dbd22925124e1"
+        },
+        {
+          "path": "archive/mac/v1.2.0/build.sh",
+          "bytes": 1164,
+          "sha256": "83588045831797c956dc5f67d50f5c7abc236b12db1a5b62eb9e2a7d158c2408"
+        },
+        {
+          "path": "archive/mac/v1.2.0/docs/1.0-使用说明.md",
+          "bytes": 8393,
+          "sha256": "e927ae0dd5ad7ae44d1d46146c73c2019f52567492098e8b654f3952d3ba8a70"
+        },
+        {
+          "path": "archive/mac/v1.2.0/docs/1.0-测试报告.md",
+          "bytes": 2693,
+          "sha256": "78af0a67336c7ca61a639f6f43112b9bceb54cfeb79fb26f78ef25c5e1d5ef81"
+        },
+        {
+          "path": "archive/mac/v1.2.0/docs/1.1-使用说明.md",
+          "bytes": 4714,
+          "sha256": "8e8841f96b1a0f40930412c56a9e3c0595e54b5ecf633810688d93936d9ecfbd"
+        },
+        {
+          "path": "archive/mac/v1.2.0/docs/1.1-测试报告.md",
+          "bytes": 2654,
+          "sha256": "330189605e18d31b7f5578946bfb909614ac36e1b4547fed9933a4b1c57d28ff"
+        },
+        {
+          "path": "archive/mac/v1.2.0/使用说明.md",
+          "bytes": 7503,
+          "sha256": "2427db9a96bf89bdecd326cb3cdeb188cf17e3d30681ed7bf09b393a50ea49c9"
+        },
+        {
+          "path": "archive/mac/v1.2.0/实测报文分析.md",
+          "bytes": 2158,
+          "sha256": "2092b0c1d89c5a9fa3b69547fb83d79ffbb3229c6142c08f45ae169557e419e1"
+        },
+        {
+          "path": "archive/mac/v1.2.0/测试报告.md",
+          "bytes": 3568,
+          "sha256": "d57aa10b04d611648ba15b376ec87436ef5c8f2d2196b1cd551c3b7760af0f66"
+        }
+      ]
+    },
+    {
+      "name": "Mac 1.3：供电及数据指令按钮",
+      "tag": "mac-v1.3.0",
+      "source": "archive/mac/v1.3.0",
+      "package": "releases/绿电实验室Mac版-1.3.0.zip",
+      "bytes": 1114632,
+      "sha256": "160589673c6d7e77b3e006a9ac706667227b642daa3db12fba2c5289617e07fc",
+      "extracted_files": [
+        {
+          "path": "archive/mac/v1.3.0/Automation/normalize-summary.cjs",
+          "bytes": 2869,
+          "sha256": "15ca9c4ecfaf2e9ebde8ec491c076e138bfc192812bb2abb4fa5b0ca19cb69c6"
+        },
+        {
+          "path": "archive/mac/v1.3.0/Automation/test-receiver.cjs",
+          "bytes": 1481,
+          "sha256": "b02c35c7fe9ae72c107af87ac82f31ebe09bf7396d4943bcb79dcbd2b85f8b96"
+        },
+        {
+          "path": "archive/mac/v1.3.0/Automation/本地n8n说明.md",
+          "bytes": 2683,
+          "sha256": "6bdab98a7b9f24ba8758dc5790e64ec6458d339070926b878ae99526161b5a0b"
+        },
+        {
+          "path": "archive/mac/v1.3.0/Automation/绿电实验室-接收流程-模板.json",
+          "bytes": 4829,
+          "sha256": "a87a4049794f4b9c31745f8a645a947be543b4f2dba54f133ed831495c462572"
+        },
+        {
+          "path": "archive/mac/v1.3.0/Evidence/1.2-Drive云端验证.json",
+          "bytes": 680,
+          "sha256": "ea7a5bdc5618c2ff46064ac5501af0f2c781c78498389cb87e65e2af4a9dbdb6"
+        },
+        {
+          "path": "archive/mac/v1.3.0/Evidence/1.2-n8n接收验证.json",
+          "bytes": 2087,
+          "sha256": "0076fbcf2a53ee1b1611cd8bbb9111811fe56016184909a541dc5ac5c6aa619a"
+        },
+        {
+          "path": "archive/mac/v1.3.0/Evidence/1.2-原生采集到n8n验证.json",
+          "bytes": 228,
+          "sha256": "abd6fbe8901aa4dce19171076dcf4eec5c4756990c387f8ff52d4364e2b2bffe"
+        },
+        {
+          "path": "archive/mac/v1.3.0/Evidence/1.2-断线重连验证.json",
+          "bytes": 959,
+          "sha256": "109f1c5948f23afc86c034a943cdbcf9e064246cff2570ea2ee6c65c822be071"
+        },
+        {
+          "path": "archive/mac/v1.3.0/Evidence/1.2-模拟服务接收命令核对.json",
+          "bytes": 69,
+          "sha256": "3eb3440dd477379365ab8ea53eb7532c8ca03a8a0dd24a857a9ab1a28c82f71d"
+        },
+        {
+          "path": "archive/mac/v1.3.0/Evidence/1.3-设备指令验证.json",
+          "bytes": 371,
+          "sha256": "f83c3cf82f903acca44f9b1efaa65fd5f6ed5d584a8429d136396f3305574df7"
+        },
+        {
+          "path": "archive/mac/v1.3.0/Evidence/20261020-新版实物读取-941帧.bin",
+          "bytes": 491181,
+          "sha256": "4162b2305e0a6491ca75e605c565d6c0fa3de67dcfabbde5bd9f41af86a8f1ab"
+        },
+        {
+          "path": "archive/mac/v1.3.0/Evidence/20261020-新版实物读取-核对.json",
+          "bytes": 646,
+          "sha256": "e18dd25adb1b284f8f09459b068af18fdc2057a4417475770d5cdbc6b03391aa"
+        },
+        {
+          "path": "archive/mac/v1.3.0/Evidence/20261020-新版实物读取-诊断.json",
+          "bytes": 1109,
+          "sha256": "e37ebfad3b593565c72950310e6f1755d8679d9a3ec4a2af68105197b1dd0b90"
+        },
+        {
+          "path": "archive/mac/v1.3.0/Evidence/F251D351-实测原始.bin",
+          "bytes": 126906,
+          "sha256": "f68a7366b80d76643a9cad2949d91a30f0b2e8874cddbee6e0b807272e2f6aad"
+        },
+        {
+          "path": "archive/mac/v1.3.0/Evidence/F251D351-解析核对.json",
+          "bytes": 737,
+          "sha256": "669905cdc8d81eed728b6b77b8685601c095d89e72218a6dd4df6c068889cfb8"
+        },
+        {
+          "path": "archive/mac/v1.3.0/Source/App.swift",
+          "bytes": 48697,
+          "sha256": "2fdd18937d41979bd4cae884aa768e5d857d56a6387c4d51e731604ea29929a8"
+        },
+        {
+          "path": "archive/mac/v1.3.0/Source/AppIcon.icns",
+          "bytes": 84058,
+          "sha256": "bf69afe387d17443715ac2a78cb5dc9f855e37428f9a3ecb77852340ac704ffc"
+        },
+        {
+          "path": "archive/mac/v1.3.0/Source/DeviceCommands.swift",
+          "bytes": 1244,
+          "sha256": "a716d20c3c330390b1544e9d87992bbf899e851daa71fdf2c051e47352275df8"
+        },
+        {
+          "path": "archive/mac/v1.3.0/Source/Info.plist",
+          "bytes": 1155,
+          "sha256": "6c78eba73e39093435ba3e1e2bfdc78418f5a99abfffbc32bd630a2b28bf10f4"
+        },
+        {
+          "path": "archive/mac/v1.3.0/Source/Protocol.swift",
+          "bytes": 16060,
+          "sha256": "3b5ae823948b49048aa928a9039b2a7b4bf25ee682422c5fd6ebc0e8eded5068"
+        },
+        {
+          "path": "archive/mac/v1.3.0/Source/Storage.swift",
+          "bytes": 13913,
+          "sha256": "c3658e7f5c10609bf5f13b78b7f0c8ff3f044b3974d6589a2a1b1836b22d0b7d"
+        },
+        {
+          "path": "archive/mac/v1.3.0/Source/index.html",
+          "bytes": 37394,
+          "sha256": "493dadf9d0970c3089347c50a5f06c811066165dc0d40e392168eafd5e7cdc26"
+        },
+        {
+          "path": "archive/mac/v1.3.0/Source/main.swift",
+          "bytes": 108,
+          "sha256": "3da4c6253566508bcec4450be74f6bb0a27d0aa90f9925210430566503b2192e"
+        },
+        {
+          "path": "archive/mac/v1.3.0/Tests/CommandIntegration/main.swift",
+          "bytes": 3392,
+          "sha256": "b55a1c4801f76ab958d89cd60b5605350bf490dc07ce9d1518ed25f287abd5e6"
+        },
+        {
+          "path": "archive/mac/v1.3.0/Tests/CommandIntegration/server.py",
+          "bytes": 1164,
+          "sha256": "e7e0edc75faa3c9f529d65611a73fddb162b29578e7cf75c204bb8841c5ba964"
+        },
+        {
+          "path": "archive/mac/v1.3.0/Tests/CommandTests.swift",
+          "bytes": 1484,
+          "sha256": "83ab0a68d37fbe470a307e0eaf1cef60ed20cc7317273123f01fae18a82b4ca4"
+        },
+        {
+          "path": "archive/mac/v1.3.0/Tests/Fixtures/1.1-实物读取-941帧.bin",
+          "bytes": 491181,
+          "sha256": "4162b2305e0a6491ca75e605c565d6c0fa3de67dcfabbde5bd9f41af86a8f1ab"
+        },
+        {
+          "path": "archive/mac/v1.3.0/Tests/Fixtures/expected.json",
+          "bytes": 186,
+          "sha256": "2af8e3b345951b61cea2374eda9a1fcb07172b194f43652850da13064a9ed2d5"
+        },
+        {
+          "path": "archive/mac/v1.3.0/Tests/Fixtures/最终版模拟采集摘要.csv",
+          "bytes": 3420,
+          "sha256": "939109fbadc17dbe2775ad4df048f54886ca03d2c6350a821188c1625b484175"
+        },
+        {
+          "path": "archive/mac/v1.3.0/Tests/Fixtures/模拟原机报文.bin",
+          "bytes": 5950,
+          "sha256": "9d013e0100ca7c25a1c233527db2db7a3b78a2468dc6c4d04962d2f436205857"
+        },
+        {
+          "path": "archive/mac/v1.3.0/Tests/Fixtures/模拟电表波形.csv",
+          "bytes": 31981,
+          "sha256": "d3c2def216bbc896f280ede3dc817fe1d7982187887989915e49f9cc5f5b662b"
+        },
+        {
+          "path": "archive/mac/v1.3.0/Tests/Fixtures/测试用模拟采集原始报文.bin",
+          "bytes": 2097152,
+          "sha256": "1d07685e324543cbf78fcbfe3ab354f271e4a1b4177d7eea1211b8f5a7db5274"
+        },
+        {
+          "path": "archive/mac/v1.3.0/Tests/Fixtures/测试用模拟采集摘要.csv",
+          "bytes": 12588,
+          "sha256": "b6dc6ec6b87c6392badc1c7c1aa72587f62a1cd3921056397f43d172cb880ed2"
+        },
+        {
+          "path": "archive/mac/v1.3.0/Tests/Fixtures/测试用模拟采集波形.csv",
+          "bytes": 28141,
+          "sha256": "f0676a07e4ac83a1d5b4e1491efa7a32865eab22cfc883d0defa25083f78a71b"
+        },
+        {
+          "path": "archive/mac/v1.3.0/Tests/Fixtures/设备诊断.json",
+          "bytes": 1109,
+          "sha256": "e37ebfad3b593565c72950310e6f1755d8679d9a3ec4a2af68105197b1dd0b90"
+        },
+        {
+          "path": "archive/mac/v1.3.0/Tests/StorageTests.swift",
+          "bytes": 6318,
+          "sha256": "ea65469b0e9278193eaed21d4d7af5022f56ff07b1cc2536c249e8f6828fe657"
+        },
+        {
+          "path": "archive/mac/v1.3.0/Tests/main.swift",
+          "bytes": 8033,
+          "sha256": "3341e6255f10d3aa2dff4c932576c7c1bb7352edea8f325fb1b7d420e2887125"
+        },
+        {
+          "path": "archive/mac/v1.3.0/Tests/mock_device.py",
+          "bytes": 3718,
+          "sha256": "c094b04118b814a50da978d04b52ad1c9c6f5ebdb0eb60b1c88dbd22925124e1"
+        },
+        {
+          "path": "archive/mac/v1.3.0/build.sh",
+          "bytes": 1192,
+          "sha256": "2ad164f7b6961f795b6f05746218ab7ab87508b091d08b63410ba97057c027e3"
+        },
+        {
+          "path": "archive/mac/v1.3.0/docs/1.0-使用说明.md",
+          "bytes": 8393,
+          "sha256": "e927ae0dd5ad7ae44d1d46146c73c2019f52567492098e8b654f3952d3ba8a70"
+        },
+        {
+          "path": "archive/mac/v1.3.0/docs/1.0-测试报告.md",
+          "bytes": 2693,
+          "sha256": "78af0a67336c7ca61a639f6f43112b9bceb54cfeb79fb26f78ef25c5e1d5ef81"
+        },
+        {
+          "path": "archive/mac/v1.3.0/docs/1.1-使用说明.md",
+          "bytes": 4714,
+          "sha256": "8e8841f96b1a0f40930412c56a9e3c0595e54b5ecf633810688d93936d9ecfbd"
+        },
+        {
+          "path": "archive/mac/v1.3.0/docs/1.1-测试报告.md",
+          "bytes": 2654,
+          "sha256": "330189605e18d31b7f5578946bfb909614ac36e1b4547fed9933a4b1c57d28ff"
+        },
+        {
+          "path": "archive/mac/v1.3.0/使用说明.md",
+          "bytes": 9495,
+          "sha256": "a64d683b5c7c515718873ec44b6a0272879206eab95c41abed108a3cc1fd0f74"
+        },
+        {
+          "path": "archive/mac/v1.3.0/实测报文分析.md",
+          "bytes": 2158,
+          "sha256": "2092b0c1d89c5a9fa3b69547fb83d79ffbb3229c6142c08f45ae169557e419e1"
+        },
+        {
+          "path": "archive/mac/v1.3.0/测试报告.md",
+          "bytes": 4538,
+          "sha256": "27905b096e513c36fb3b2a194bb8f2ec2d16f03fcd31a730cacda4392bcb5ed2"
+        }
+      ]
+    },
+    {
+      "name": "Mac 1.4：参考瓦数、导出与模型调研",
+      "tag": "mac-v1.4.0",
+      "source": "archive/mac/v1.4.0",
+      "package": "releases/绿电实验室Mac版-1.4.0.zip",
+      "bytes": 1152186,
+      "sha256": "3f161c03a333789d389cce626fdbd5ddde3c6eff557c6742de0ad43f95648401",
+      "extracted_files": [
+        {
+          "path": "archive/mac/v1.4.0/Automation/normalize-summary.cjs",
+          "bytes": 2869,
+          "sha256": "15ca9c4ecfaf2e9ebde8ec491c076e138bfc192812bb2abb4fa5b0ca19cb69c6"
+        },
+        {
+          "path": "archive/mac/v1.4.0/Automation/test-receiver.cjs",
+          "bytes": 1481,
+          "sha256": "b02c35c7fe9ae72c107af87ac82f31ebe09bf7396d4943bcb79dcbd2b85f8b96"
+        },
+        {
+          "path": "archive/mac/v1.4.0/Automation/本地n8n说明.md",
+          "bytes": 2683,
+          "sha256": "6bdab98a7b9f24ba8758dc5790e64ec6458d339070926b878ae99526161b5a0b"
+        },
+        {
+          "path": "archive/mac/v1.4.0/Automation/绿电实验室-接收流程-模板.json",
+          "bytes": 4829,
+          "sha256": "a87a4049794f4b9c31745f8a645a947be543b4f2dba54f133ed831495c462572"
+        },
+        {
+          "path": "archive/mac/v1.4.0/Evidence/1.2-Drive云端验证.json",
+          "bytes": 680,
+          "sha256": "ea7a5bdc5618c2ff46064ac5501af0f2c781c78498389cb87e65e2af4a9dbdb6"
+        },
+        {
+          "path": "archive/mac/v1.4.0/Evidence/1.2-n8n接收验证.json",
+          "bytes": 2087,
+          "sha256": "0076fbcf2a53ee1b1611cd8bbb9111811fe56016184909a541dc5ac5c6aa619a"
+        },
+        {
+          "path": "archive/mac/v1.4.0/Evidence/1.2-原生采集到n8n验证.json",
+          "bytes": 228,
+          "sha256": "abd6fbe8901aa4dce19171076dcf4eec5c4756990c387f8ff52d4364e2b2bffe"
+        },
+        {
+          "path": "archive/mac/v1.4.0/Evidence/1.2-断线重连验证.json",
+          "bytes": 959,
+          "sha256": "109f1c5948f23afc86c034a943cdbcf9e064246cff2570ea2ee6c65c822be071"
+        },
+        {
+          "path": "archive/mac/v1.4.0/Evidence/1.2-模拟服务接收命令核对.json",
+          "bytes": 69,
+          "sha256": "3eb3440dd477379365ab8ea53eb7532c8ca03a8a0dd24a857a9ab1a28c82f71d"
+        },
+        {
+          "path": "archive/mac/v1.4.0/Evidence/1.3-设备指令验证.json",
+          "bytes": 371,
+          "sha256": "f83c3cf82f903acca44f9b1efaa65fd5f6ed5d584a8429d136396f3305574df7"
+        },
+        {
+          "path": "archive/mac/v1.4.0/Evidence/1.4-瓦数端到端验证.json",
+          "bytes": 414,
+          "sha256": "6ee47b65f2454b9c4fee1a450d8fe347e370d918ba3272470af643504577c81f"
+        },
+        {
+          "path": "archive/mac/v1.4.0/Evidence/20261020-新版实物读取-941帧.bin",
+          "bytes": 491181,
+          "sha256": "4162b2305e0a6491ca75e605c565d6c0fa3de67dcfabbde5bd9f41af86a8f1ab"
+        },
+        {
+          "path": "archive/mac/v1.4.0/Evidence/20261020-新版实物读取-核对.json",
+          "bytes": 646,
+          "sha256": "e18dd25adb1b284f8f09459b068af18fdc2057a4417475770d5cdbc6b03391aa"
+        },
+        {
+          "path": "archive/mac/v1.4.0/Evidence/20261020-新版实物读取-诊断.json",
+          "bytes": 1109,
+          "sha256": "e37ebfad3b593565c72950310e6f1755d8679d9a3ec4a2af68105197b1dd0b90"
+        },
+        {
+          "path": "archive/mac/v1.4.0/Evidence/F251D351-实测原始.bin",
+          "bytes": 126906,
+          "sha256": "f68a7366b80d76643a9cad2949d91a30f0b2e8874cddbee6e0b807272e2f6aad"
+        },
+        {
+          "path": "archive/mac/v1.4.0/Evidence/F251D351-解析核对.json",
+          "bytes": 737,
+          "sha256": "669905cdc8d81eed728b6b77b8685601c095d89e72218a6dd4df6c068889cfb8"
+        },
+        {
+          "path": "archive/mac/v1.4.0/GitHub电器识别模型调研.md",
+          "bytes": 4754,
+          "sha256": "635a9a7190217dc55540d8388f4a25e8a1a57b6ebf20f789539e408681807208"
+        },
+        {
+          "path": "archive/mac/v1.4.0/Source/App.swift",
+          "bytes": 54047,
+          "sha256": "84aed08fdc03ec2822a210670253c9be202481f19078b745e96825a6304a10ed"
+        },
+        {
+          "path": "archive/mac/v1.4.0/Source/AppIcon.icns",
+          "bytes": 84058,
+          "sha256": "bf69afe387d17443715ac2a78cb5dc9f855e37428f9a3ecb77852340ac704ffc"
+        },
+        {
+          "path": "archive/mac/v1.4.0/Source/DeviceCommands.swift",
+          "bytes": 1244,
+          "sha256": "a716d20c3c330390b1544e9d87992bbf899e851daa71fdf2c051e47352275df8"
+        },
+        {
+          "path": "archive/mac/v1.4.0/Source/Info.plist",
+          "bytes": 1155,
+          "sha256": "f8aed4b81d85bca157f6bd9379b103ea40eb70dcce9e89c2128fc2a802aa1b7f"
+        },
+        {
+          "path": "archive/mac/v1.4.0/Source/Power.swift",
+          "bytes": 3507,
+          "sha256": "e1f3bee051d490120b4f2c4c9da5f37c7c4871fd49c10c8bfec58b15d83ac07c"
+        },
+        {
+          "path": "archive/mac/v1.4.0/Source/Protocol.swift",
+          "bytes": 16060,
+          "sha256": "3b5ae823948b49048aa928a9039b2a7b4bf25ee682422c5fd6ebc0e8eded5068"
+        },
+        {
+          "path": "archive/mac/v1.4.0/Source/Storage.swift",
+          "bytes": 13913,
+          "sha256": "731b5e453538c3c23ab2e47350bbd7529735203b292e3011b0ab27f23b6572c7"
+        },
+        {
+          "path": "archive/mac/v1.4.0/Source/index.html",
+          "bytes": 42184,
+          "sha256": "a78ba84888460fec7dc6e3f0a7649c8701dc910b3eb3e278878cb63e2cc780de"
+        },
+        {
+          "path": "archive/mac/v1.4.0/Source/main.swift",
+          "bytes": 108,
+          "sha256": "3da4c6253566508bcec4450be74f6bb0a27d0aa90f9925210430566503b2192e"
+        },
+        {
+          "path": "archive/mac/v1.4.0/Tests/CommandIntegration/main.swift",
+          "bytes": 3392,
+          "sha256": "b55a1c4801f76ab958d89cd60b5605350bf490dc07ce9d1518ed25f287abd5e6"
+        },
+        {
+          "path": "archive/mac/v1.4.0/Tests/CommandIntegration/server.py",
+          "bytes": 1164,
+          "sha256": "e7e0edc75faa3c9f529d65611a73fddb162b29578e7cf75c204bb8841c5ba964"
+        },
+        {
+          "path": "archive/mac/v1.4.0/Tests/CommandTests.swift",
+          "bytes": 1484,
+          "sha256": "83ab0a68d37fbe470a307e0eaf1cef60ed20cc7317273123f01fae18a82b4ca4"
+        },
+        {
+          "path": "archive/mac/v1.4.0/Tests/Fixtures/1.1-实物读取-941帧.bin",
+          "bytes": 491181,
+          "sha256": "4162b2305e0a6491ca75e605c565d6c0fa3de67dcfabbde5bd9f41af86a8f1ab"
+        },
+        {
+          "path": "archive/mac/v1.4.0/Tests/Fixtures/expected.json",
+          "bytes": 186,
+          "sha256": "2af8e3b345951b61cea2374eda9a1fcb07172b194f43652850da13064a9ed2d5"
+        },
+        {
+          "path": "archive/mac/v1.4.0/Tests/Fixtures/最终版模拟采集摘要.csv",
+          "bytes": 3420,
+          "sha256": "939109fbadc17dbe2775ad4df048f54886ca03d2c6350a821188c1625b484175"
+        },
+        {
+          "path": "archive/mac/v1.4.0/Tests/Fixtures/模拟原机报文.bin",
+          "bytes": 5950,
+          "sha256": "9d013e0100ca7c25a1c233527db2db7a3b78a2468dc6c4d04962d2f436205857"
+        },
+        {
+          "path": "archive/mac/v1.4.0/Tests/Fixtures/模拟电表波形.csv",
+          "bytes": 31981,
+          "sha256": "d3c2def216bbc896f280ede3dc817fe1d7982187887989915e49f9cc5f5b662b"
+        },
+        {
+          "path": "archive/mac/v1.4.0/Tests/Fixtures/测试用模拟采集原始报文.bin",
+          "bytes": 2097152,
+          "sha256": "1d07685e324543cbf78fcbfe3ab354f271e4a1b4177d7eea1211b8f5a7db5274"
+        },
+        {
+          "path": "archive/mac/v1.4.0/Tests/Fixtures/测试用模拟采集摘要.csv",
+          "bytes": 12588,
+          "sha256": "b6dc6ec6b87c6392badc1c7c1aa72587f62a1cd3921056397f43d172cb880ed2"
+        },
+        {
+          "path": "archive/mac/v1.4.0/Tests/Fixtures/测试用模拟采集波形.csv",
+          "bytes": 28141,
+          "sha256": "f0676a07e4ac83a1d5b4e1491efa7a32865eab22cfc883d0defa25083f78a71b"
+        },
+        {
+          "path": "archive/mac/v1.4.0/Tests/Fixtures/设备诊断.json",
+          "bytes": 1109,
+          "sha256": "e37ebfad3b593565c72950310e6f1755d8679d9a3ec4a2af68105197b1dd0b90"
+        },
+        {
+          "path": "archive/mac/v1.4.0/Tests/PowerIntegration/main.swift",
+          "bytes": 3321,
+          "sha256": "2c0f1d033bc1fcdef6220e93883cd6dff851fb6cc8372398cda3a7d5bc97abb0"
+        },
+        {
+          "path": "archive/mac/v1.4.0/Tests/PowerIntegration/server.py",
+          "bytes": 916,
+          "sha256": "84327877209c48c06d18999b83d11a19ae20c7f7f872f4ed08a74270e9cbe4b2"
+        },
+        {
+          "path": "archive/mac/v1.4.0/Tests/PowerTests.swift",
+          "bytes": 3075,
+          "sha256": "c0696e49ae0dc50a8648ea08bffbf70d0734c6abf094ba0df26594cc7fbd1a21"
+        },
+        {
+          "path": "archive/mac/v1.4.0/Tests/StorageTests.swift",
+          "bytes": 6318,
+          "sha256": "ea65469b0e9278193eaed21d4d7af5022f56ff07b1cc2536c249e8f6828fe657"
+        },
+        {
+          "path": "archive/mac/v1.4.0/Tests/main.swift",
+          "bytes": 8054,
+          "sha256": "bc1de24b69c9bdf57321bb4709a96d6671335d2835f9c1cd8f70459868a3c9fe"
+        },
+        {
+          "path": "archive/mac/v1.4.0/Tests/mock_device.py",
+          "bytes": 3718,
+          "sha256": "c094b04118b814a50da978d04b52ad1c9c6f5ebdb0eb60b1c88dbd22925124e1"
+        },
+        {
+          "path": "archive/mac/v1.4.0/build.sh",
+          "bytes": 1211,
+          "sha256": "5b5f7b79760a73ac23e517d5bd5349c0d8064203c66bc5c83959cfe277137c4c"
+        },
+        {
+          "path": "archive/mac/v1.4.0/docs/1.0-使用说明.md",
+          "bytes": 8393,
+          "sha256": "e927ae0dd5ad7ae44d1d46146c73c2019f52567492098e8b654f3952d3ba8a70"
+        },
+        {
+          "path": "archive/mac/v1.4.0/docs/1.0-测试报告.md",
+          "bytes": 2693,
+          "sha256": "78af0a67336c7ca61a639f6f43112b9bceb54cfeb79fb26f78ef25c5e1d5ef81"
+        },
+        {
+          "path": "archive/mac/v1.4.0/docs/1.1-使用说明.md",
+          "bytes": 4714,
+          "sha256": "8e8841f96b1a0f40930412c56a9e3c0595e54b5ecf633810688d93936d9ecfbd"
+        },
+        {
+          "path": "archive/mac/v1.4.0/docs/1.1-测试报告.md",
+          "bytes": 2654,
+          "sha256": "330189605e18d31b7f5578946bfb909614ac36e1b4547fed9933a4b1c57d28ff"
+        },
+        {
+          "path": "archive/mac/v1.4.0/使用说明.md",
+          "bytes": 11400,
+          "sha256": "4c7fc089a2255b8077c6ad4a295337c22d3b40611aba6346d69db90e0cd74670"
+        },
+        {
+          "path": "archive/mac/v1.4.0/实测报文分析.md",
+          "bytes": 2158,
+          "sha256": "2092b0c1d89c5a9fa3b69547fb83d79ffbb3229c6142c08f45ae169557e419e1"
+        },
+        {
+          "path": "archive/mac/v1.4.0/测试报告.md",
+          "bytes": 6204,
+          "sha256": "0e50148c5794060bd19e457be11c936f8ec729d0480f2d797a1ec205c0344870"
+        }
+      ]
+    },
+    {
+      "name": "独立插座 IP 读取测试器 1.0.1",
+      "tag": "probe-v1.0.1",
+      "source": "archive/tools/socket-ip-probe/v1.0.1",
+      "package": "releases/插座IP读取测试器-1.0.1.zip",
+      "bytes": 517698,
+      "sha256": "7442882299d2f91442c550480153695ea4b7454913ffc2ed95718dd1c973b9e0",
+      "extracted_files": [
+        {
+          "path": "archive/tools/socket-ip-probe/v1.0.1/Source/ProbeCore.swift",
+          "bytes": 7883,
+          "sha256": "071ffa927320890f26a51c01a22dfd7723b67adad36865f9b8b7dbb17d701a8a"
+        },
+        {
+          "path": "archive/tools/socket-ip-probe/v1.0.1/Source/ProbeApp.swift",
+          "bytes": 15890,
+          "sha256": "dd884f43b6c914092f1b10b72cfb03766492fc78f6201645835362c2de06c464"
+        },
+        {
+          "path": "archive/tools/socket-ip-probe/v1.0.1/Source/AppIcon.icns",
+          "bytes": 64374,
+          "sha256": "bed1d827279c03b4a9f7a29607bd4b306e54eadb8f890a515235460da5904373"
+        },
+        {
+          "path": "archive/tools/socket-ip-probe/v1.0.1/Source/ProbeRunner.swift",
+          "bytes": 12618,
+          "sha256": "d0d8829929bc8a152a5cb518c139ec9b739328f7cf137ef341460acd2e03a08a"
+        },
+        {
+          "path": "archive/tools/socket-ip-probe/v1.0.1/Source/main.swift",
+          "bytes": 113,
+          "sha256": "41ec6ebb0d091f88fdd7f65e06d2aeba36b11a20e1368b9bdd936b2072625418"
+        },
+        {
+          "path": "archive/tools/socket-ip-probe/v1.0.1/Source/Info.plist",
+          "bytes": 1067,
+          "sha256": "d3afccc72a10ab36035602968f9043f6ab85973a558f0add70bce3c88ae56e22"
+        },
+        {
+          "path": "archive/tools/socket-ip-probe/v1.0.1/Tests/mock_socket.py",
+          "bytes": 3288,
+          "sha256": "242659893881641094383ad316d7c3fcbb66643153147f82942d7ac4691bf778"
+        },
+        {
+          "path": "archive/tools/socket-ip-probe/v1.0.1/Tests/main.swift",
+          "bytes": 5049,
+          "sha256": "ebdb94ef553f5b51ecb8236c44ae2186d0b8b6191ec88bd007fca082f6a98866"
+        },
+        {
+          "path": "archive/tools/socket-ip-probe/v1.0.1/Tools/make-icon.swift",
+          "bytes": 1489,
+          "sha256": "28e6b7379ddef2504b9acffa85a939ac2ad9a70e46dfe1aa82ca9e89b3acbe19"
+        },
+        {
+          "path": "archive/tools/socket-ip-probe/v1.0.1/先看这里.md",
+          "bytes": 4674,
+          "sha256": "300914d3a7e3de6578e0ff1a3c1f44551df2110e0c1d6a6fea6e71fa0a84070b"
+        },
+        {
+          "path": "archive/tools/socket-ip-probe/v1.0.1/验证记录.md",
+          "bytes": 1659,
+          "sha256": "58499d3ac720dd3f4a5159fbc399a16c4eacc5708ca7f2763b6c4f3c08618417"
+        },
+        {
+          "path": "archive/tools/socket-ip-probe/v1.0.1/build.sh",
+          "bytes": 1066,
+          "sha256": "cb862efd8745163d33ed5d79b75433a002a83c36b1c7150d3cfc3205cd4e7800"
+        },
+        {
+          "path": "archive/tools/socket-ip-probe/v1.0.1/界面预览.png",
+          "bytes": 281620,
+          "sha256": "fdc3198f40800bfeca6bfacb1f867703a6906f8b139aa4179b0bb9a6367654d0"
+        }
+      ]
+    },
+    {
+      "name": "插座 Wi-Fi 离线连接工具",
+      "tag": "wifi-offline",
+      "source": "archive/tools/wifi-offline",
+      "package": "releases/插座WiFi离线连接工具.zip",
+      "bytes": 5867,
+      "sha256": "6498b7f4d4030b41213055323ecbb16cb4edbaa2a3f8b6ed241ec301b18d1f02",
+      "extracted_files": [
+        {
+          "path": "archive/tools/wifi-offline/离线操作说明.html",
+          "bytes": 7032,
+          "sha256": "83059bf46a80b839e3973fd69d58437ee198ccd4af9bbda60bcf6cdaab3ba862"
+        },
+        {
+          "path": "archive/tools/wifi-offline/device_probe.py",
+          "bytes": 4483,
+          "sha256": "cbc385f2593d0d7e1f63bbcdeeb6f290009e472e70bf64460baf0601c0ee11da"
+        }
+      ]
+    },
+    {
+      "name": "早期 YS8000 接入包",
+      "tag": "ys8000-legacy",
+      "source": "archive/integration/ys8000-legacy",
+      "package": "releases/绿电实验室-YS8000接入包.zip",
+      "bytes": 10275,
+      "sha256": "549c443359f24f738f7c5ce058800847e0c6441e9428a3f95a393551e8317a9c",
+      "extracted_files": [
+        {
+          "path": "archive/integration/ys8000-legacy/ys8000_gateway.py",
+          "bytes": 12418,
+          "sha256": "a97539e3c0e0637b8a640fe6040a57fa46eb490dca13201ea92ad46bb2d4f07f"
+        },
+        {
+          "path": "archive/integration/ys8000-legacy/ys8000-config.json",
+          "bytes": 410,
+          "sha256": "2e023a11d431bf42dd63fe3f8adad7dc8f3e346a8d110f01f22dc457e5df3331"
+        },
+        {
+          "path": "archive/integration/ys8000-legacy/YS8000接入指南.md",
+          "bytes": 8471,
+          "sha256": "3f4862ecc2a7945629a19cd46cda54fd7c285cd9c579d3d79d03677726220794"
+        },
+        {
+          "path": "archive/integration/ys8000-legacy/knn-reference.csv",
+          "bytes": 4625,
+          "sha256": "1efde781e5a31406f31547cec1b74285d127ee08d59255aef994a66d5572992e"
+        }
+      ]
+    },
+    {
+      "name": "网页版交付源码包",
+      "tag": "web-delivered-source",
+      "source": "archive/web/delivered-source",
+      "package": "releases/智能电表网页源码.zip",
+      "bytes": 287665,
+      "sha256": "be6bd149ecf9ed450b0a7f64e03b259748fabb2a221672bb7d73010fb8642d8b",
+      "extracted_files": [
+        {
+          "path": "archive/web/delivered-source/.gitignore",
+          "bytes": 626,
+          "sha256": "4d5e1d0e4fd34b97614f289ea1bb2966e4487c5d8fc43b6b18c7471c000b2bf6"
+        },
+        {
+          "path": "archive/web/delivered-source/.npmrc",
+          "bytes": 45,
+          "sha256": "a3909ac0447c469fda12c57374993be70f47ce73e49fd3124678c7c047f2214d"
+        },
+        {
+          "path": "archive/web/delivered-source/.openai/hosting.json",
+          "bytes": 91,
+          "sha256": "a00bef53eb002f0449dbad0949eea9717d4aefd93d7e154ece8753da21444b67"
+        },
+        {
+          "path": "archive/web/delivered-source/README.md",
+          "bytes": 4755,
+          "sha256": "cc7b591958d8af159a13fdfef741f44db44c327b2439963b872ff4795ae6b02d"
+        },
+        {
+          "path": "archive/web/delivered-source/adapters/send_readings.py",
+          "bytes": 3037,
+          "sha256": "ebd544e6edce61b3c063c09f4f969c54820143cba3b2f1eaf3cfaeb924757a64"
+        },
+        {
+          "path": "archive/web/delivered-source/adapters/ys8000_gateway.py",
+          "bytes": 12418,
+          "sha256": "a97539e3c0e0637b8a640fe6040a57fa46eb490dca13201ea92ad46bb2d4f07f"
+        },
+        {
+          "path": "archive/web/delivered-source/app/api/config/route.ts",
+          "bytes": 747,
+          "sha256": "937c110efbec93744c0407c6b1de0413ea0e945223b65d0a1def466ff75ce222"
+        },
+        {
+          "path": "archive/web/delivered-source/app/api/import/route.ts",
+          "bytes": 364,
+          "sha256": "1da37868dde0abcbb1380d1d52f98c6643d39fff2b59616ba05ec806aa6724da"
+        },
+        {
+          "path": "archive/web/delivered-source/app/api/ingest/route.ts",
+          "bytes": 602,
+          "sha256": "1b06f1b3e5b418038ed8391270125792463f6ddec945915810f8da1aa5e15ffa"
+        },
+        {
+          "path": "archive/web/delivered-source/app/api/key/route.ts",
+          "bytes": 826,
+          "sha256": "24f9154de9aa37e177742e401c31cb2e1b3709a4d4fd3df0d3da9669bfbbc76a"
+        },
+        {
+          "path": "archive/web/delivered-source/app/api/readings/route.ts",
+          "bytes": 1564,
+          "sha256": "f6d1bc75c6b55feff40c8ce07473a89421e47d197b7db6c17648685eaca19e9d"
+        },
+        {
+          "path": "archive/web/delivered-source/app/api/ys8000/route.ts",
+          "bytes": 2348,
+          "sha256": "37442742f4ed155ed3e276ba0762c3adbf94b83957c792d22d7d633159027cc0"
+        },
+        {
+          "path": "archive/web/delivered-source/app/chatgpt-auth.ts",
+          "bytes": 2550,
+          "sha256": "4265a2e7c2dcb3a6f4b7026f762bf5b6e4caec76cc13c0a45987ee9a9f2e42cc"
+        },
+        {
+          "path": "archive/web/delivered-source/app/dashboard.tsx",
+          "bytes": 35700,
+          "sha256": "d87f3fe0ddecc24f685d3a51269b71903d83165a37d18d5409933b35afba9cb0"
+        },
+        {
+          "path": "archive/web/delivered-source/app/globals.css",
+          "bytes": 32083,
+          "sha256": "ce1aff1661c04e47da856f29cc50fc58b5c8944b7f0c4c9703af2b3cbe82c981"
+        },
+        {
+          "path": "archive/web/delivered-source/app/layout.tsx",
+          "bytes": 377,
+          "sha256": "0a18216a6ebfcea573d1cee0329f3bed6d14a217548c4dcd8906974f7594d006"
+        },
+        {
+          "path": "archive/web/delivered-source/app/model-lab.tsx",
+          "bytes": 10013,
+          "sha256": "1212518432e6348791a02fee1c1acf637a1a77437ba1a04039447e16ed6a43d7"
+        },
+        {
+          "path": "archive/web/delivered-source/app/page.tsx",
+          "bytes": 239,
+          "sha256": "d2a9b8aac819bb40471bb14d0acd20d50f897173a024cbcbbcf8677f816a7cb6"
+        },
+        {
+          "path": "archive/web/delivered-source/app/waveform-lab.tsx",
+          "bytes": 13531,
+          "sha256": "5da342901fb9f3b6b6e987d3109928e59d02ff965f66768da734243b7e5429ca"
+        },
+        {
+          "path": "archive/web/delivered-source/build/connector-preview-plugin.mjs",
+          "bytes": 7211,
+          "sha256": "a6a9fe2086e302f94a3f91e3c1a68a45bb3aa07d4a79faf01b14732191eb4e80"
+        },
+        {
+          "path": "archive/web/delivered-source/build/connector-preview-worker.mjs",
+          "bytes": 594,
+          "sha256": "c1b6b2c420cb67d9e28f8f4ae440f578c0dfd4cb840a12cfe4b58076629a17ba"
+        },
+        {
+          "path": "archive/web/delivered-source/build/sites-vite-plugin.LICENSE",
+          "bytes": 1063,
+          "sha256": "7de1e115d165f176e68f962acdb809b5ab8d8ae78d3981e0701392b2ac50c713"
+        },
+        {
+          "path": "archive/web/delivered-source/build/sites-vite-plugin.ts",
+          "bytes": 7185,
+          "sha256": "07af20e7097d9ed1d76f7c446d02997550b8fc5ca89668b249e25eabd62c6834"
+        },
+        {
+          "path": "archive/web/delivered-source/build/sites-worker.ts",
+          "bytes": 1279,
+          "sha256": "28a75f74adfc226a773d1c00d5779c26412eea40a104da5c77f7d0f0fc30f0e8"
+        },
+        {
+          "path": "archive/web/delivered-source/cloudflare-env.d.ts",
+          "bytes": 99,
+          "sha256": "8b0eca84aa3364cc7ccc43cc3af6beb88dd34ebd410de08690bf094ce39fbcb0"
+        },
+        {
+          "path": "archive/web/delivered-source/components.json",
+          "bytes": 420,
+          "sha256": "31f4ca67a4a62572571003d3d5aac85ee6fbfca67a192924bac6b168d95e98fd"
+        },
+        {
+          "path": "archive/web/delivered-source/components/connector-error.tsx",
+          "bytes": 1082,
+          "sha256": "2d0d04559952ce9c9a327cca499f4b99f35d885cccfce375230e116695d3f155"
+        },
+        {
+          "path": "archive/web/delivered-source/components/ui/accordion.tsx",
+          "bytes": 2048,
+          "sha256": "a4f153089ba886dfcf73fac26b5c01ca933fa12fbe88df6fb723912bfffdfbb0"
+        },
+        {
+          "path": "archive/web/delivered-source/components/ui/alert-dialog.tsx",
+          "bytes": 5439,
+          "sha256": "9a8d950f2b9b4352d5ebb762fb44d5c28c2d353aa29712071973656a8736e311"
+        },
+        {
+          "path": "archive/web/delivered-source/components/ui/alert.tsx",
+          "bytes": 1614,
+          "sha256": "2cc59b5f7bda91c1670884b1bf46bfc8a2a6f226cef184f5762acc037188885b"
+        },
+        {
+          "path": "archive/web/delivered-source/components/ui/aspect-ratio.tsx",
+          "bytes": 274,
+          "sha256": "b1c157886236782cb92d8fbcd4749532aaf6d8aabefd6e157ca40358f902f407"
+        },
+        {
+          "path": "archive/web/delivered-source/components/ui/attachment.tsx",
+          "bytes": 6002,
+          "sha256": "ae8a25dd1a896d3964e3ef54d97e51221b418cde287dfd794428b89951c5c790"
+        },
+        {
+          "path": "archive/web/delivered-source/components/ui/avatar.tsx",
+          "bytes": 2916,
+          "sha256": "58a846bf1617b94b9681921db9b8461d0145f311424663d11678a06b6153cb34"
+        },
+        {
+          "path": "archive/web/delivered-source/components/ui/badge.tsx",
+          "bytes": 1776,
+          "sha256": "46a0de5224f6a5d5d63d45246534288518dce888f031064bff925bbc7fe6ad97"
+        },
+        {
+          "path": "archive/web/delivered-source/components/ui/breadcrumb.tsx",
+          "bytes": 2350,
+          "sha256": "d4c0831bba2212e778248f54a6ace6ef378df8bba4616d1abf27787a31eabae5"
+        },
+        {
+          "path": "archive/web/delivered-source/components/ui/bubble.tsx",
+          "bytes": 4699,
+          "sha256": "870cc0c5cfc8a515053f7e41e706a6bd017a909b45f1305fd3b164a52cc4483b"
+        },
+        {
+          "path": "archive/web/delivered-source/components/ui/button-group.tsx",
+          "bytes": 2202,
+          "sha256": "784c89d8ee683e1bc972ae69e6ea8225a7f63abe22aa1b5fc3423ae8a2a399c0"
+        },
+        {
+          "path": "archive/web/delivered-source/components/ui/button.tsx",
+          "bytes": 2392,
+          "sha256": "cc36af0f8b5019c33cc039fbf03bb952a513072b15b55b53c592b78af3e5f4c4"
+        },
+        {
+          "path": "archive/web/delivered-source/components/ui/calendar.tsx",
+          "bytes": 7832,
+          "sha256": "3855fbe0d3f8ad3a4b93071f98b76a9f6782d46ec8b05f5d2ddbee1e4e39bc84"
+        },
+        {
+          "path": "archive/web/delivered-source/components/ui/card.tsx",
+          "bytes": 1987,
+          "sha256": "c48dd3b96be90a7066f1aebf294f0af9d00ebcdc367d5d4aca55429ade570c1c"
+        },
+        {
+          "path": "archive/web/delivered-source/components/ui/carousel.tsx",
+          "bytes": 5556,
+          "sha256": "b7ea0dda3903d972c186f739e23da61f547bc83b5a0bf13b16856577846d5fc3"
+        },
+        {
+          "path": "archive/web/delivered-source/components/ui/chart.tsx",
+          "bytes": 10614,
+          "sha256": "45aa5ea4a386f4fb5b8869ff4bab3a08cf89255190ee322043baf84c3e950b6a"
+        },
+        {
+          "path": "archive/web/delivered-source/components/ui/checkbox.tsx",
+          "bytes": 1214,
+          "sha256": "b23ab9d4deeedf2ac8f512c368361ede681aa383437ef48563a6f9b7dbe95f27"
+        },
+        {
+          "path": "archive/web/delivered-source/components/ui/collapsible.tsx",
+          "bytes": 795,
+          "sha256": "c6598e5584f4258b5d9fefadbc5ad6a66888ad58729f4b634a0bb2d9c513188b"
+        },
+        {
+          "path": "archive/web/delivered-source/components/ui/combobox.tsx",
+          "bytes": 9158,
+          "sha256": "2d68e78b2dc7e38a085f222dede60a80b4f8229a6e91732c484605e204d46735"
+        },
+        {
+          "path": "archive/web/delivered-source/components/ui/command.tsx",
+          "bytes": 4818,
+          "sha256": "361193df1e3d64a9e9b5048f045264782fcb387aab3f00f2b805fdcbf538b16a"
+        },
+        {
+          "path": "archive/web/delivered-source/components/ui/context-menu.tsx",
+          "bytes": 8268,
+          "sha256": "2cf1fcf59df0649a3e2a126d1df2f639145f6b6bf5689ee54af1f40ab1245017"
+        },
+        {
+          "path": "archive/web/delivered-source/components/ui/dialog.tsx",
+          "bytes": 4303,
+          "sha256": "dce39c6adc47d997bd2567f8b7a72f466b0134715105cd42f9194007b8ecdb14"
+        },
+        {
+          "path": "archive/web/delivered-source/components/ui/direction.tsx",
+          "bytes": 506,
+          "sha256": "84ae2ad658207f0e0f367978e5508cd8027cd00c29c41d3d13db21a708c3d1e6"
+        },
+        {
+          "path": "archive/web/delivered-source/components/ui/drawer.tsx",
+          "bytes": 4255,
+          "sha256": "cb6eaf58eb0757ca91af284e5d925b89a42ad7eb19cb3f44c575a3487aa9350f"
+        },
+        {
+          "path": "archive/web/delivered-source/components/ui/dropdown-menu.tsx",
+          "bytes": 8418,
+          "sha256": "98f0dcdae38225b73734aceeb9213dd751fea2c72ea520df31003cd133deac8a"
+        },
+        {
+          "path": "archive/web/delivered-source/components/ui/empty.tsx",
+          "bytes": 2396,
+          "sha256": "ae95bdcf367a076ae02e7925f14522a148798f72d9651749c6d55497dba584c0"
+        },
+        {
+          "path": "archive/web/delivered-source/components/ui/field.tsx",
+          "bytes": 6159,
+          "sha256": "ba67d76f017ac059fc86cf8c344e0b2991c4322d3619e125498c19b87f6eefbd"
+        },
+        {
+          "path": "archive/web/delivered-source/components/ui/form.tsx",
+          "bytes": 3757,
+          "sha256": "315b46bb75ab7d1c6061b5d750aa4bedf6e7a455e15e2d7f9182f053d5972b1e"
+        },
+        {
+          "path": "archive/web/delivered-source/components/ui/hover-card.tsx",
+          "bytes": 1526,
+          "sha256": "f5d8df42c59370ec14d61bcc54f7d68e9bb7dfa0d6a872b2f7cffc2aafbf23b8"
+        },
+        {
+          "path": "archive/web/delivered-source/components/ui/input-group.tsx",
+          "bytes": 5065,
+          "sha256": "6afbd58fea4c438e6252dc4568bddc122e84ababead4ad5cee50ace01100c9a0"
+        },
+        {
+          "path": "archive/web/delivered-source/components/ui/input-otp.tsx",
+          "bytes": 2254,
+          "sha256": "161946daa89f0eda2575b9271c0494e35807c4ffb55598a49f67160c17fec299"
+        },
+        {
+          "path": "archive/web/delivered-source/components/ui/input.tsx",
+          "bytes": 962,
+          "sha256": "8c4612a7c41319ac5049daa3b34b080f9784b6245c17780eb87c127e58e473db"
+        },
+        {
+          "path": "archive/web/delivered-source/components/ui/item.tsx",
+          "bytes": 4486,
+          "sha256": "6e2144d6d87142dbbe56d568810bf546318c8aa661447ebb0d76ebbf382cb45f"
+        },
+        {
+          "path": "archive/web/delivered-source/components/ui/kbd.tsx",
+          "bytes": 862,
+          "sha256": "6088c3a5432338b1719c17e9b5d0e1fa74fd1f66060f248fc88909d33a82cd13"
+        },
+        {
+          "path": "archive/web/delivered-source/components/ui/label.tsx",
+          "bytes": 606,
+          "sha256": "a476e41f08b9de5bd447de66a33d8bc2ad18f2fa6b96c064778bab4b6f439f4c"
+        },
+        {
+          "path": "archive/web/delivered-source/components/ui/marker.tsx",
+          "bytes": 1864,
+          "sha256": "3d798763f094b2bb5e7ade2d5cd1b9bab498bc8ca7fd4cfaf4e5835bdedc34a0"
+        },
+        {
+          "path": "archive/web/delivered-source/components/ui/menubar.tsx",
+          "bytes": 8389,
+          "sha256": "9243af8afcea03703398ccd1c2a8c0a87ad6cbaf2bd272fb609f5b79fe46aebb"
+        },
+        {
+          "path": "archive/web/delivered-source/components/ui/message-scroller.tsx",
+          "bytes": 3992,
+          "sha256": "bb7660a248e4e9589c3816c7c1c199ea1381a70d2c8476ae895b567a7a4d86cf"
+        },
+        {
+          "path": "archive/web/delivered-source/components/ui/message.tsx",
+          "bytes": 2232,
+          "sha256": "9d2952bf3b641081f09aa2739535e6bbd1be0a4946789752a2c20d8aaef43185"
+        },
+        {
+          "path": "archive/web/delivered-source/components/ui/native-select.tsx",
+          "bytes": 1995,
+          "sha256": "007516b111fca8c98a6c40c94ab91bb68cc5b52afce1ed1f5e510c3d86e7347c"
+        },
+        {
+          "path": "archive/web/delivered-source/components/ui/navigation-menu.tsx",
+          "bytes": 6658,
+          "sha256": "889d358a77de88e9cb6f39ea4895ea4c76eaf01d731b74e44f1c41e97a78a044"
+        },
+        {
+          "path": "archive/web/delivered-source/components/ui/pagination.tsx",
+          "bytes": 2717,
+          "sha256": "374ad135c3d4ff3ec080a0009cd9745cdd0e12faa89d2b0e86074f11e5127fd1"
+        },
+        {
+          "path": "archive/web/delivered-source/components/ui/popover.tsx",
+          "bytes": 2357,
+          "sha256": "31c350309ff5d3034e6ecf1b0eda75ba8855bdbf987fc7ad6d71f0ef07c5a447"
+        },
+        {
+          "path": "archive/web/delivered-source/components/ui/progress.tsx",
+          "bytes": 755,
+          "sha256": "c8c26e8f5f041c3cdf4915347dc1d9c022f9448f149990fadcaf303e952fa57d"
+        },
+        {
+          "path": "archive/web/delivered-source/components/ui/radio-group.tsx",
+          "bytes": 1460,
+          "sha256": "fe5ce39636d0818c2bf9c4eebddff893d1225fa2c81b5fa4bb8cbb39a8c913ce"
+        },
+        {
+          "path": "archive/web/delivered-source/components/ui/resizable.tsx",
+          "bytes": 1815,
+          "sha256": "bc63958467aa00557c551bb0d96a5ae4c965c1e1ba2380e595949d933b132f7c"
+        },
+        {
+          "path": "archive/web/delivered-source/components/ui/scroll-area.tsx",
+          "bytes": 1639,
+          "sha256": "8bd9d986b2844c9a87de825c6de4787b6739b36c3dc9a05ccf3eb107160e4043"
+        },
+        {
+          "path": "archive/web/delivered-source/components/ui/select.tsx",
+          "bytes": 6353,
+          "sha256": "0b796a108a4eb5ba52d9ad938b7aea36dc56ae66c703a6d0a23dbc24f96daff3"
+        },
+        {
+          "path": "archive/web/delivered-source/components/ui/separator.tsx",
+          "bytes": 694,
+          "sha256": "6da346505c8629a4668420d2a5ca48891383bbe0b0ceb14163537c671879427e"
+        },
+        {
+          "path": "archive/web/delivered-source/components/ui/sheet.tsx",
+          "bytes": 4188,
+          "sha256": "63863cf2df8f8973e52b3459ac9bdbf81be1262dbc70eb53d5271ffb03488e16"
+        },
+        {
+          "path": "archive/web/delivered-source/components/ui/sidebar.tsx",
+          "bytes": 21526,
+          "sha256": "4a8d73e7730a2b1fcecfca31299ed26db65c2307b84197a59c6ec7c01c7ad28e"
+        },
+        {
+          "path": "archive/web/delivered-source/components/ui/skeleton.tsx",
+          "bytes": 276,
+          "sha256": "ba48dd5be5a6a1378bd4e011028654b5bf419f1e7d20ee4b9f8330c1264e7239"
+        },
+        {
+          "path": "archive/web/delivered-source/components/ui/slider.tsx",
+          "bytes": 1991,
+          "sha256": "0e37484f4b416e79ac18c655cac961aefacf6e67085cfc2b320ea8af545635a3"
+        },
+        {
+          "path": "archive/web/delivered-source/components/ui/sonner.tsx",
+          "bytes": 1034,
+          "sha256": "13ccc9b0fe4248e622f83a1d3b2f0566b72b5e04162d7d0c8db8945ecc71b55f"
+        },
+        {
+          "path": "archive/web/delivered-source/components/ui/spinner.tsx",
+          "bytes": 331,
+          "sha256": "3e6e6e8d37fb4069f8e43e55318f8db06fbc36e6c8be0096da3c9337c1c798b9"
+        },
+        {
+          "path": "archive/web/delivered-source/components/ui/switch.tsx",
+          "bytes": 1408,
+          "sha256": "386d4d4deb39f34126f9700fe9bf5393d238485dd94018bba9d154dda84c62ae"
+        },
+        {
+          "path": "archive/web/delivered-source/components/ui/table.tsx",
+          "bytes": 2478,
+          "sha256": "20e5a7f224959c6b75802995706a97e9da171f693d4b6b1b436388fcd9df96f3"
+        },
+        {
+          "path": "archive/web/delivered-source/components/ui/tabs.tsx",
+          "bytes": 3782,
+          "sha256": "865d0194331b9b2be36723fa79d3575dc83078b4cb941cafee87cb72fc2cff46"
+        },
+        {
+          "path": "archive/web/delivered-source/components/ui/textarea.tsx",
+          "bytes": 759,
+          "sha256": "253cdeb487c73beaaccdf47fc163e36e7d5b7ae6ddf09a4f64998a109a112979"
+        },
+        {
+          "path": "archive/web/delivered-source/components/ui/toggle-group.tsx",
+          "bytes": 2308,
+          "sha256": "69f643e889e933f05c1439084480d8646f66a161c7d1cf0730ee926382ade35e"
+        },
+        {
+          "path": "archive/web/delivered-source/components/ui/toggle.tsx",
+          "bytes": 1565,
+          "sha256": "ba4d0b0a2b2fee75dc36dfc19e32082e721024b919050c97fd5dc70faa924e16"
+        },
+        {
+          "path": "archive/web/delivered-source/components/ui/tooltip.tsx",
+          "bytes": 1830,
+          "sha256": "a0784eb77831a799fad7991df4f1b666f876201565a80175e1aa68733574a2e4"
+        },
+        {
+          "path": "archive/web/delivered-source/db/index.ts",
+          "bytes": 423,
+          "sha256": "dc7610b00b918e0ffff1360a63626f16655ced3064b2eaf96095a4101fb14bcd"
+        },
+        {
+          "path": "archive/web/delivered-source/db/schema.ts",
+          "bytes": 508,
+          "sha256": "7eab44628a1464f15f27f844eff333020522da10e00efb59accbbbe1a7c847a6"
+        },
+        {
+          "path": "archive/web/delivered-source/drizzle.config.ts",
+          "bytes": 148,
+          "sha256": "af081f7384aaeb0082cf422e29f139d137ca2f6a57c69b2c37b9fb1f8479867b"
+        },
+        {
+          "path": "archive/web/delivered-source/drizzle/0000_orange_supreme_intelligence.sql",
+          "bytes": 344,
+          "sha256": "280d7d7e3ba4fa2bc93a7df5aac17e57b4660360ea8601fa8746476ec2fa1142"
+        },
+        {
+          "path": "archive/web/delivered-source/drizzle/meta/0000_snapshot.json",
+          "bytes": 2367,
+          "sha256": "667c732c23d90b4643399196e57c2ca6144a7cb28b98b5db346036a8f9152be9"
+        },
+        {
+          "path": "archive/web/delivered-source/drizzle/meta/_journal.json",
+          "bytes": 217,
+          "sha256": "5be92900d95d5f823337864b07d726e06e9d2c9209ae606a717fa8a94dba9cf2"
+        },
+        {
+          "path": "archive/web/delivered-source/eslint.config.mjs",
+          "bytes": 846,
+          "sha256": "f22a254df7d934bbf9be499d3c969a13abb7f7f64c03f5967d0095cad81dfe06"
+        },
+        {
+          "path": "archive/web/delivered-source/examples/d1/app/api/notes/route.ts",
+          "bytes": 1700,
+          "sha256": "a3d4a74fd53b7bf53e2df41f169d9d9d44a8b22aeb6d92f4e754956079af8909"
+        },
+        {
+          "path": "archive/web/delivered-source/examples/d1/db/schema.ts",
+          "bytes": 370,
+          "sha256": "d89eabd95716ce404f5f7ca2a254220435be8ddce7c899d7ef461ff22ec80454"
+        },
+        {
+          "path": "archive/web/delivered-source/hooks/use-mobile.ts",
+          "bytes": 565,
+          "sha256": "ad0936f84f1df79d3697bfbff9c18f8ad58431c1cbaf2359c6a853b0fcc9f28b"
+        },
+        {
+          "path": "archive/web/delivered-source/lib/appliance-model.mjs",
+          "bytes": 4898,
+          "sha256": "732e39b90a57cf7ced754037af6b112c15a4a388c8bfbc9442638c8b69408062"
+        },
+        {
+          "path": "archive/web/delivered-source/lib/connector-context.ts",
+          "bytes": 612,
+          "sha256": "bbddff68689cb0f6926fecd4b8b96f12f2054277c296e97b0df07d4ad5ece24e"
+        },
+        {
+          "path": "archive/web/delivered-source/lib/connector-contract.mts",
+          "bytes": 5362,
+          "sha256": "e1a7b24a8793af34b595690d9b1300c897c7321c14f215cedf58ad95799d7c3e"
+        },
+        {
+          "path": "archive/web/delivered-source/lib/connector-errors.mts",
+          "bytes": 2717,
+          "sha256": "a22edf13d6873ae832c4a2a0d579fc666c73ec996ef0722d39172649d38f0871"
+        },
+        {
+          "path": "archive/web/delivered-source/lib/connector-preview.d.ts",
+          "bytes": 433,
+          "sha256": "abd69a94f7f61f1359063bb557574faae35e8ff5a028cc4c04b9ee248ef52642"
+        },
+        {
+          "path": "archive/web/delivered-source/lib/connectors.ts",
+          "bytes": 416,
+          "sha256": "1c93d747e384c8e17e3e3dd5361b24412babf5eba2a11d2ae7a75f4e0924112c"
+        },
+        {
+          "path": "archive/web/delivered-source/lib/meter.mjs",
+          "bytes": 7942,
+          "sha256": "7c42be5999cacdd405e1f615955570909273a984ffccbe4ba8e55105e85b925d"
+        },
+        {
+          "path": "archive/web/delivered-source/lib/power-forecast.mjs",
+          "bytes": 3524,
+          "sha256": "94a256a0c54921d306f2c77cd08a97f12b7e22cd2126fc9404b388bb9fda7214"
+        },
+        {
+          "path": "archive/web/delivered-source/lib/server.ts",
+          "bytes": 2003,
+          "sha256": "1767e469f6e5b04597ba6f9572e93792a344d37851e996768c78a2e658049d66"
+        },
+        {
+          "path": "archive/web/delivered-source/lib/utils.ts",
+          "bytes": 177,
+          "sha256": "53f3d3d070f0a9082934da25b875f9499855c2b0693868dd28be8c23d8730f68"
+        },
+        {
+          "path": "archive/web/delivered-source/lib/waveform.mjs",
+          "bytes": 5386,
+          "sha256": "e12dc99f5f96abdede4781232853e209b2612cb7680021b9b15347ba0de9cd33"
+        },
+        {
+          "path": "archive/web/delivered-source/next.config.ts",
+          "bytes": 133,
+          "sha256": "614bce25b089c3f19b1e17a6346c74b858034040154c6621e7d35303004767cc"
+        },
+        {
+          "path": "archive/web/delivered-source/package.json",
+          "bytes": 2077,
+          "sha256": "8a3bca6bac3265527cad3384b5277ce29abfd26fc63f85b1d24838f05588d06d"
+        },
+        {
+          "path": "archive/web/delivered-source/pnpm-lock.yaml",
+          "bytes": 355770,
+          "sha256": "14bb90f5414355c4de98d3859b81272cc380476c94d7ceab603d3b0ae5b7a3fc"
+        },
+        {
+          "path": "archive/web/delivered-source/pnpm-workspace.yaml",
+          "bytes": 99,
+          "sha256": "7d4b38523fc9f54f3bd7bebf3aeac0342863bcfb2dc4198f855d09d28a9fccc9"
+        },
+        {
+          "path": "archive/web/delivered-source/postcss.config.mjs",
+          "bytes": 94,
+          "sha256": "dfac7ac2d86d326a0e5adb024e7943c181393ed17a5fcb8f0315b24c7da6ddde"
+        },
+        {
+          "path": "archive/web/delivered-source/public/favicon.svg",
+          "bytes": 177,
+          "sha256": "d861a8c0024e24f87afa0b72ab8ac308c0d4e95e60ca231c21efce6923728ebf"
+        },
+        {
+          "path": "archive/web/delivered-source/public/file.svg",
+          "bytes": 392,
+          "sha256": "1e0ae4d1a1ddfa36752988647b731e4abf150c414d069ec83c96fb0aaeff0307"
+        },
+        {
+          "path": "archive/web/delivered-source/public/globe.svg",
+          "bytes": 1036,
+          "sha256": "d051a8c47936990a9085693d307bb7cea1bc1b6d7ed956bcbaacf674f4ec96b9"
+        },
+        {
+          "path": "archive/web/delivered-source/public/hardware/YS8000接入指南.md",
+          "bytes": 8471,
+          "sha256": "3f4862ecc2a7945629a19cd46cda54fd7c285cd9c579d3d79d03677726220794"
+        },
+        {
+          "path": "archive/web/delivered-source/public/hardware/knn-reference.csv",
+          "bytes": 4625,
+          "sha256": "1efde781e5a31406f31547cec1b74285d127ee08d59255aef994a66d5572992e"
+        },
+        {
+          "path": "archive/web/delivered-source/public/hardware/ys8000-config.json",
+          "bytes": 410,
+          "sha256": "2e023a11d431bf42dd63fe3f8adad7dc8f3e346a8d110f01f22dc457e5df3331"
+        },
+        {
+          "path": "archive/web/delivered-source/public/hardware/ys8000_gateway.py",
+          "bytes": 12418,
+          "sha256": "a97539e3c0e0637b8a640fe6040a57fa46eb490dca13201ea92ad46bb2d4f07f"
+        },
+        {
+          "path": "archive/web/delivered-source/public/window.svg",
+          "bytes": 386,
+          "sha256": "decf1cf7bb22b5c99c4857cfcd5718ce5465c4454166317589c83fc73df74b66"
+        },
+        {
+          "path": "archive/web/delivered-source/scripts/build-verified.sh",
+          "bytes": 661,
+          "sha256": "2ae5329ac860076070c9217a43106a15cb5ecf907a0f7baeb9ef903f76b53c68"
+        },
+        {
+          "path": "archive/web/delivered-source/scripts/connector-preview/connector-preview-session.mjs",
+          "bytes": 6855,
+          "sha256": "57224ad185a25115a14fccc68d3217e55b199260c3dd98a2c807beffec1a0a9b"
+        },
+        {
+          "path": "archive/web/delivered-source/scripts/connector-preview/host-binding.mjs",
+          "bytes": 7793,
+          "sha256": "9e44ab6864133a5c82f834a5904ebb7d6104cb783c24efba3c0fe1a161182cea"
+        },
+        {
+          "path": "archive/web/delivered-source/scripts/connector-preview/protocol.mjs",
+          "bytes": 1781,
+          "sha256": "111e062ebf08d3f180130f5bc3dcb3c1414c1d7be3c032c9d675a61c0c7513a8"
+        },
+        {
+          "path": "archive/web/delivered-source/scripts/execution-profile.mjs",
+          "bytes": 624,
+          "sha256": "2e71116f4d2b70cff8bb70436f8dd5c709ec7ff62893424530f404e0193d3630"
+        },
+        {
+          "path": "archive/web/delivered-source/scripts/install-ci.mjs",
+          "bytes": 1685,
+          "sha256": "4a5a92d60a08d0ba54effd8373da2da06284312c55b767287c68a0bec7200da7"
+        },
+        {
+          "path": "archive/web/delivered-source/scripts/install-ci.sh",
+          "bytes": 6783,
+          "sha256": "10d8764a61be50351dc3496e13588270de7956f0aa5f1189c49cabb2d89fe5c0"
+        },
+        {
+          "path": "archive/web/delivered-source/scripts/install-pnpm.sh",
+          "bytes": 9015,
+          "sha256": "a684c02c2b493dfbf262a66252a5cd36f81ca995a4024761728662ae63aa40c0"
+        },
+        {
+          "path": "archive/web/delivered-source/scripts/npm-install.mjs",
+          "bytes": 7025,
+          "sha256": "9715c6a32d1d4a0289ef6376a0e819c3b6a6416b8a9877733d9fb4339ce626b6"
+        },
+        {
+          "path": "archive/web/delivered-source/scripts/pnpm-install.mjs",
+          "bytes": 10633,
+          "sha256": "a83164e344c1947053def83b546be8115deaa827314bbaead7afe6b6451c5cdf"
+        },
+        {
+          "path": "archive/web/delivered-source/scripts/run-framework.mjs",
+          "bytes": 993,
+          "sha256": "9bf9f41a29314cabe0238b8e9c540ec3f7b5a6adafc7c8fb6c3940722d061dca"
+        },
+        {
+          "path": "archive/web/delivered-source/scripts/sites-env.mjs",
+          "bytes": 906,
+          "sha256": "5de99d6806b01f0ee0b941af3684d75dcf1afbbcff22cb95bfa2e584c5dafa88"
+        },
+        {
+          "path": "archive/web/delivered-source/scripts/sites-env.sh",
+          "bytes": 1530,
+          "sha256": "df86ebfc27d2f00860036658e933ac0ddd7b5f6879aa5d51218f0863c7e1fb60"
+        },
+        {
+          "path": "archive/web/delivered-source/tests/api.test.mjs",
+          "bytes": 3137,
+          "sha256": "43477b8258440059476dc3abb44a2bc0ed2ad905b188a0f4a8a70730469c61dd"
+        },
+        {
+          "path": "archive/web/delivered-source/tests/meter.test.mjs",
+          "bytes": 3943,
+          "sha256": "cc9ab61218888c0589ca0acac31d4a2770d5654b3323e0714358f0f30eea6dbf"
+        },
+        {
+          "path": "archive/web/delivered-source/tests/test_ys8000.py",
+          "bytes": 2136,
+          "sha256": "82433aacb59f40fd80e64d0eda5e3197bdd8fb7b16acb5a4a36f8de5a9891c20"
+        },
+        {
+          "path": "archive/web/delivered-source/tests/waveform.test.mjs",
+          "bytes": 4562,
+          "sha256": "61bb05fa8b6167b66219fefae4a383c5b02f01e615567adaec74f6b2f12b778e"
+        },
+        {
+          "path": "archive/web/delivered-source/tests/ys8000-api.test.mjs",
+          "bytes": 2779,
+          "sha256": "22900c5c3d9448e81e0ef443a4314f9fe80c183b2d4dc36fc14aefcb1f36810b"
+        },
+        {
+          "path": "archive/web/delivered-source/tsconfig.json",
+          "bytes": 800,
+          "sha256": "7199c6e4e400921e8049729840165a39f1476fa97901bed00239e7697bfe8da4"
+        },
+        {
+          "path": "archive/web/delivered-source/vendor/shadcn-tailwind-4.13.0.LICENSE.md",
+          "bytes": 1063,
+          "sha256": "1564074e13439397221ffd522e2e504d56561994a23d371aa5e3ad43e4f5423f"
+        },
+        {
+          "path": "archive/web/delivered-source/vendor/shadcn-tailwind-4.13.0.css",
+          "bytes": 16041,
+          "sha256": "bc7d83425702955b4cb67cb14ede9d603f9d912376d57a2d81d661094d2a782a"
+        },
+        {
+          "path": "archive/web/delivered-source/vite.config.ts",
+          "bytes": 3115,
+          "sha256": "6f6d890794fbe23f3e35cceb327f49d5977432a5aaf715e040a6408932da395b"
+        },
+        {
+          "path": "archive/web/delivered-source/接入说明.md",
+          "bytes": 5832,
+          "sha256": "a9cca5e42ea6b02eea915ef1174e96fe1d9917a60f68c0e63052f48c1f79ec72"
+        },
+        {
+          "path": "archive/web/delivered-source/电表数据模板.csv",
+          "bytes": 40,
+          "sha256": "f2e26c9d713ea5258ac3d8062e6e8987098a77b9d7975cbde07ad4f0854388b7"
+        }
+      ]
+    }
+  ],
+  "raw_daily_capture_included": false,
+  "private_runtime_included": false
+}

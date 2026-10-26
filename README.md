@@ -1,53 +1,26 @@
-# 绿电实验室 · 比赛用智能电表
+# 绿电实验室 · 全版本存档
 
-中文单电器用电监测网页，带数据库与数据采集接口。默认私有访问。
+本仓库于 **2026-10-26** 将已交付版本补入 Git。补档提交时间表示归档时间，不伪造原始开发日期。
 
-网站：https://green-meter-lab-ahaoxiao.ziben-mac.chatgpt.site
+## 从哪里开始
 
-## 功能
+- **当前 Mac 版：** [1.4 源码](archive/mac/v1.4.0/Source/)、[使用说明](archive/mac/v1.4.0/使用说明.md)、[测试报告](archive/mac/v1.4.0/测试报告.md)。
+- **全部安装包：** [releases](releases/)，包含 Mac 1.0–1.4、独立 IP 测试器、离线连接工具、早期接入包及网页源码包。
+- **全部版本索引：** [VERSIONS.md](VERSIONS.md)。原始 ZIP 按字节保留，校验值见 [ARCHIVE_MANIFEST.json](ARCHIVE_MANIFEST.json)。
+- **网页版：** 根目录 app/、lib/、db/、adapters/ 等保留原工程布局；[原网页版说明](archive/web/README-original.md)。
+- **本地 n8n：** [archive/automation/n8n-local](archive/automation/n8n-local/)，包含模板、启动脚本及测试。
+- **电器模型调研：** [GitHub 调研报告](archive/mac/v1.4.0/GitHub电器识别模型调研.md)。
 
-实时电表、日用电统计、节电前后对比、异常记录、CSV 导入导出、设备配置和采集密钥管理。演示数据在浏览器内生成，不写入数据库；真实模式初始为空。
+## 当前功能和限制
 
-## 开发与验证
+Mac 1.4 支持 192.168.1.2:8266 的已核对波形解析、本地保存、Drive 同步、手动供电/采集指令及参考瓦数。参考 W 尚未完成实物标定；6400 Hz 为配置值；继电器输出未被软件独立核实。第三方电器分类模型尚未接入和验证。
 
-Node ≥22.13，pnpm 11.25。安装：`pnpm install`。启动：`pnpm run dev`。预览开发环境的登录入口为 `/signin-with-chatgpt?return_to=/`。
+历史版本的说明保留当时状态，其中旧 IP、旧协议假设和 W 留空等不代表最新版行为。早期 YS8000 网页适配器不适用于已经核对的 socket128 报文，应按版本说明使用。
 
-配置 `.openai/hosting.json` 的 `d1` 为 `DB`。数据库结构在 `db/schema.ts`；迁移在 `drizzle/`。本地初始化顺序：`pnpm run build` 后执行 README 中下方的本地迁移命令，再启动开发服务。
+## 版本与数据范围
 
-```
-node --import ./scripts/sites-env.mjs ./node_modules/wrangler/bin/wrangler.js d1 execute DB --local --config dist/server/wrangler.json --persist-to .wrangler/state --file drizzle/0000_orange_supreme_intelligence.sql
-```
+软件源码、测试、文档、原始交付包和版本内已有的协议验证样本均存档。日常采集目录、n8n 运行数据库、私有接收路径、登录信息、密钥及未授权的厂商反编译源码不进入本仓库。安装包内保留原有测试样本。
 
-`node --test tests/meter.test.mjs` 检查数据计算与 CSV 校验。`pnpm exec tsc --noEmit` 检查类型。`pnpm run build` 构建。接口集成测试只允许 loopback，运行前需设置 `METER_ALLOW_TEST_DB=1`；它会生成测试记录并轮换本地采集密钥，应仅对空的、可丢弃的本地数据库运行。
+原网页三次提交保留在本地归档仓库的祖先历史，并额外保存为 [original-web-history.bundle](archive/original-web-history.bundle)，可通过 Git 恢复原提交。GitHub 补档提交可能具有不同的提交编号。
 
-## 数据接口
-
-- `GET /api/config`：设备与计算参数。
-- `PUT /api/config`：保存参数（登录用户，同源请求）。
-- `GET /api/readings?from=YYYY-MM-DD&to=YYYY-MM-DD`：UTC+8 日期范围内的记录、区间前一条读数、全局最后记录和最后自动记录。最多 31 天、300,000 条；超量返回错误，需缩小范围。
-- `POST /api/import`：登录用户提交 `{"readings":[...]}`，来源记为 `import`。
-- `POST /api/ingest`：采集程序携带有效密钥提交单条或 `{"readings":[...]}`，来源记为 `auto`。
-- `GET /api/key`：只返回是否设置采集密钥。
-- `POST /api/key`：登录用户生成或轮换密钥，仅一次返回明文；数据库仅保存 SHA-256 摘要。
-
-单条数据：`device_id`、带时区的 ISO `timestamp`、非负数 `power_w`（W）、`energy_kwh`（累计 kWh）。设备编号固定为 `meter-01`。不接受未来超过 60 秒的记录。同一设备、同一时间只保存一次，已有记录优先。单次最多 20,000 条或 4 MB；建议按小批次发送。所有记录在写入前校验，数据库写入分 100 条一批；发生网络/数据库失败时可重复提交，重复键可避免重复累计。并发不同值同时间记录不覆盖已有值。
-
-## 计算口径
-
-- 累计电量差统计耗电，跨日差值按间隔时长线性分摊，是估算而非逐日电表结算值。
-- 累计读数降低时，该段差值不计入电量，标记重置；重置后继续累计后续正差值。
-- 间隔超过 60 秒标记数据缺口，曲线按 15 分钟桶显示采样均值。日平均功率为采样算术平均，非时间加权平均。
-- 连续间隔不超过 60 秒的采样时长累计达到 20 小时且无重置（日期必须已结束），记为有效日。它仍可能有最多 4 小时缺口，应配合覆盖时长解读。
-- 前后时段不得重叠；各至少一个有效日。使用有效日用电量平均，正的节电值表示减少，负值表示增加；基准为零时百分比不计算。
-- 碳排系数 0.785 来自用户提供的项目图片，仅为可修改的计划默认值；电价默认 0.6 元/kWh。碳排和费用均为估算。
-- 在线状态只由自动记录的采集时间判断，超过 60 秒显示中断。CSV 导入不会使设备显示在线。
-
-参见同目录 `接入说明.md`；适配程序在 `adapters/send_readings.py`。未实现自动邮件、远程断电、积分兑换或多宿舍管理。真实电表尚待采购，网页接口验证不等同于硬件连接验证。
-
-## YS8000 与模型模块
-
-新增“波形实验”，支持 I,V,label CSV、6400 Hz 配置、有效值/有功功率/PF/谐波/V-I 分析。提供浏览器 KNN 训练与 JSON 导入导出，以及 AR(6) 未来 30 秒功率预测。硬件尚未到位，帧格式和标定需实测确认。详见 [YS8000 接入指南](public/hardware/YS8000接入指南.md)。
-
-`POST /api/ys8000` 沿用采集密钥和私有站点边界；最新波形与最近 180 秒功率摘要保存在 settings 的 ys8000:latest，用电摘要标记 source=ys8000:会话编号，每 10 秒一条，无需数据库结构迁移。
-
-验证：`node --test tests/meter.test.mjs tests/waveform.test.mjs`；`python3 -m unittest discover -s tests -p test_ys8000.py`。接口测试 `tests/ys8000-api.test.mjs` 只允许空的本机数据库，需 METER_ALLOW_TEST_DB=1。
+构建 Mac 版本需 macOS 13+ 与 Xcode Command Line Tools，在相应版本目录运行 `zsh build.sh`。所有源文件按交付包内容保留，未在补档时重新标定或改写历史代码。
