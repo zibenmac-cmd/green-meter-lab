@@ -1,0 +1,73 @@
+{
+  "verified_at": "2026-10-20T16:44:51.776318+00:00",
+  "source": "local_n8n_synthetic_test_NOT_hardware",
+  "cases": [
+    {
+      "name": "raw_adc",
+      "http_status": 200,
+      "result": {
+        "ok": true,
+        "timestamp": "2026-10-20T16:44:51.776318+00:00",
+        "session_id": "n8n-receiver-test-20261021",
+        "device_id": "test-only",
+        "source": "loopback_test_NOT_hardware",
+        "test_data": true,
+        "stale": false,
+        "calibrated": false,
+        "received_at": "2026-10-20T16:44:51.964Z",
+        "power_w": null,
+        "energy_kwh": null,
+        "load_state": "测试数据 / 非实物结论",
+        "interpretation": "仅用于接收流程测试",
+        "voltage_adc_rms": 119.4,
+        "current_adc_rms": 17.9,
+        "received_points": 6400
+      },
+      "passed": true
+    },
+    {
+      "name": "reject_uncalibrated_watts",
+      "http_status": 422,
+      "result": {
+        "ok": false,
+        "error": "未标定记录不可带入物理功率或电量",
+        "load_state": "未知",
+        "power_w": null,
+        "energy_kwh": null
+      },
+      "passed": true
+    },
+    {
+      "name": "calibrated_synthetic_only",
+      "http_status": 200,
+      "result": {
+        "ok": true,
+        "timestamp": "2026-10-20T16:44:51.776318+00:00",
+        "session_id": "n8n-receiver-test-20261021",
+        "device_id": "test-only",
+        "source": "loopback_test_NOT_hardware",
+        "test_data": true,
+        "stale": false,
+        "calibrated": true,
+        "received_at": "2026-10-20T16:44:52.061Z",
+        "power_w": 80,
+        "energy_kwh": 0.002,
+        "load_state": "测试数据 / 非实物结论",
+        "interpretation": "仅用于接收流程测试"
+      },
+      "passed": true
+    },
+    {
+      "name": "reject_missing_timestamp",
+      "http_status": 422,
+      "result": {
+        "ok": false,
+        "error": "缺少有效的 timestamp、session_id 或 source",
+        "load_state": "未知",
+        "power_w": null,
+        "energy_kwh": null
+      },
+      "passed": true
+    }
+  ]
+}

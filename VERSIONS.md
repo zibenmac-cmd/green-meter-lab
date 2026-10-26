@@ -8,8 +8,9 @@
 | Mac 1.1：实物 128 对采样协议 | [目录](archive/mac/v1.1.0/) | [ZIP](releases/绿电实验室Mac版-1.1.0.zip) |
 | Mac 1.2：自动保存、重连与 Drive 同步 | [目录](archive/mac/v1.2.0/) | [ZIP](releases/绿电实验室Mac版-1.2.0.zip) |
 | Mac 1.3：供电及数据指令按钮 | [目录](archive/mac/v1.3.0/) | [ZIP](releases/绿电实验室Mac版-1.3.0.zip) |
-| Mac 1.5：电器学习、分段采样与未知拒识 | [目录](archive/mac/v1.5.0/) | [ZIP](releases/绿电实验室Mac版-1.5.0.zip) |
 | Mac 1.4：参考瓦数、导出与模型调研 | [目录](archive/mac/v1.4.0/) | [ZIP](releases/绿电实验室Mac版-1.4.0.zip) |
+| Mac 1.5：电器学习、分段采样与未知拒识 | [目录](archive/mac/v1.5.0/) | [ZIP](releases/绿电实验室Mac版-1.5.0.zip) |
+| Mac 1.5.1：采集入口和连接提示修复 | [目录](archive/mac/v1.5.1/) | [ZIP](releases/绿电实验室Mac版-1.5.1.zip) |
 | 独立插座 IP 读取测试器 1.0.1 | [目录](archive/tools/socket-ip-probe/v1.0.1/) | [ZIP](releases/插座IP读取测试器-1.0.1.zip) |
 | 插座 Wi-Fi 离线连接工具 | [目录](archive/tools/wifi-offline/) | [ZIP](releases/插座WiFi离线连接工具.zip) |
 | 早期 YS8000 接入包 | [目录](archive/integration/ys8000-legacy/) | [ZIP](releases/绿电实验室-YS8000接入包.zip) |
@@ -30,3 +31,7 @@
 ## 1.5 更新
 
 新增电器目录、20 秒实时采样、分状态学习、按段留出验证、连续匹配与未知拒识、样本停用/恢复和自动保存。135 项检查及本机 TCP 端到端验证通过；真实电器尚未接入采样，不宣称已学会用户电器。
+
+## 1.5.1 更新
+
+采集按钮可点击检查条件，新增就近连接入口及逐项原因提示；原生端保留实时采样限制。本机 TCP 20 秒采集和前端状态回归通过，实际插座当前连接超时，未新增实物样本。
