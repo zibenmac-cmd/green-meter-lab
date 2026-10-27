@@ -1,0 +1,16 @@
+{
+  "version": "2.1.1",
+  "date": "2026-10-27",
+  "url": "https://green-meter-lab-v2.ziben-mac.workers.dev/",
+  "worker_version": "d6a15769-7976-47b4-a7f2-c9eac429a550",
+  "checks": {
+    "typescript": true,
+    "vite_build": true,
+    "local_connect_page": true,
+    "production_page_refreshed": true,
+    "old_collector_download_link_removed": true,
+    "mac_16_binding_guide_visible": true
+  },
+  "generated_or_rotated_ingest_key": false,
+  "hardware_tested": false
+}

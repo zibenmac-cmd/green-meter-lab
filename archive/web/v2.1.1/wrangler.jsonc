@@ -1,0 +1,11 @@
+{
+  "name":"green-meter-lab-v2",
+  "main":"worker/index.ts",
+  "compatibility_date":"2026-05-22",
+  "account_id":"c4c2f3dc8a1df567b8a8e2880f07866d",
+  "workers_dev":true,
+  "assets":{"directory":"./dist/web","binding":"ASSETS","not_found_handling":"single-page-application","run_worker_first":["/api/*"]},
+  "d1_databases":[{"binding":"DB","database_name":"green-meter-lab-v2","database_id":"15f6b1ac-1f74-408d-ac57-3b61ff375c78","migrations_dir":"migrations"}],
+  "observability":{"enabled":true},
+  "vars":{"APP_NAME":"绿电实验室"}
+}

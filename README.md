@@ -6,7 +6,7 @@
 
 - **当前 Mac 1.6：** [使用说明](archive/mac/v1.6.0/使用说明.md)、[源码](archive/mac/v1.6.0/Source/)、[ZIP](releases/绿电实验室Mac版-1.6.0.zip)。新增网站同步、钥匙串保存采集密钥、断网队列补传；无需另装 Python 采集器。现场连接与标定仍待完成。
 
-- **当前 Web 2.1：** [正式网站](https://green-meter-lab-v2.ziben-mac.workers.dev/)、[源码与部署说明](archive/web/v2.1.0/README-WEB.md)、[源码包](releases/绿电实验室Web版-2.1.0-源码.zip)。
+- **当前 Web 2.1.1：** [正式网站](https://green-meter-lab-v2.ziben-mac.workers.dev/)、[源码与部署说明](archive/web/v2.1.1/README-WEB.md)、[源码包](releases/绿电实验室Web版-2.1.1-源码.zip)。
 
 
 - **当前 Mac 版：** [1.5.1 源码](archive/mac/v1.5.1/Source/)、[使用说明](archive/mac/v1.5.1/使用说明.md)、[测试报告](archive/mac/v1.5.1/测试报告.md)。
