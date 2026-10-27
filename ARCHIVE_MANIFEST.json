@@ -2435,8 +2435,134 @@
           "sha256": "387d59bde859753e0c25e5b4a7ab7de61fa7696132f89f89b9347c15d3ce551b"
         }
       ]
+    },
+    {
+      "name": "Web 2.0：Cloudflare 能源工作台",
+      "tag": "web-v2.0.0",
+      "source": "archive/web/v2.0.0",
+      "package": "releases/绿电实验室Web版-2.0.0-源码.zip",
+      "bytes": 180727,
+      "sha256": "21bd1c94a7d49da10dd9ca3512be7244abcc1260664e23d2321f2fb8ccc251ea",
+      "extracted_files": [
+        {
+          "path": "archive/web/v2.0.0/.gitignore",
+          "bytes": 772,
+          "sha256": "1f80d8aa0e008001179cd16ac0e03ac134e5f4f948892ca49e51b21d21527548"
+        },
+        {
+          "path": "archive/web/v2.0.0/README-WEB.md",
+          "bytes": 5784,
+          "sha256": "7a2e761b4c43cedf85fdc76924acac9eeee26a241a2471bb7a96995b505187d2"
+        },
+        {
+          "path": "archive/web/v2.0.0/adapters/socket_bridge_v2.py",
+          "bytes": 10133,
+          "sha256": "6d77d30b29702ef700f002b4f2ba4e809ae69acb1b51508e42a28c7d4c2c0ecf"
+        },
+        {
+          "path": "archive/web/v2.0.0/lib/energy-v2.mjs",
+          "bytes": 10784,
+          "sha256": "e0ca3e3907a454de96bfbfb13087564cf64c333a0e800f7d48a54d0053376ebd"
+        },
+        {
+          "path": "archive/web/v2.0.0/lib/learning-v2.mjs",
+          "bytes": 6225,
+          "sha256": "00d86e504d306d75d2b15040bbf7e7d1423541fa197d1ecd5f09ce39e6a0fffc"
+        },
+        {
+          "path": "archive/web/v2.0.0/lib/power-forecast.mjs",
+          "bytes": 3524,
+          "sha256": "94a256a0c54921d306f2c77cd08a97f12b7e22cd2126fc9404b388bb9fda7214"
+        },
+        {
+          "path": "archive/web/v2.0.0/migrations/0001_energy.sql",
+          "bytes": 1512,
+          "sha256": "c547e99f1aed0f2de54ab5aeaf597b27d5fbb941ef055fe30a00a80de45c8805"
+        },
+        {
+          "path": "archive/web/v2.0.0/package.json",
+          "bytes": 889,
+          "sha256": "50298d4b11c2f99d1cd5c6442f04d5042e567dd7d9ac5cdd3468c40e17073899"
+        },
+        {
+          "path": "archive/web/v2.0.0/pnpm-lock.yaml",
+          "bytes": 58678,
+          "sha256": "ebe72f02181e88c104748c7efd9e6cd6c8f532c22753f9269e4a15af0cae5ef4"
+        },
+        {
+          "path": "archive/web/v2.0.0/tests/web-v2/api.local.mjs",
+          "bytes": 4789,
+          "sha256": "5c940df90d03049f21256ea44507f3e27151db6b523be65a46ae495988c5f9bd"
+        },
+        {
+          "path": "archive/web/v2.0.0/tests/web-v2/energy.test.mjs",
+          "bytes": 4126,
+          "sha256": "b6a6316d91b6cbd5c59fd39283a2ec503327e71019d02709ea222a13939802a5"
+        },
+        {
+          "path": "archive/web/v2.0.0/tests/web-v2/learning.test.mjs",
+          "bytes": 2298,
+          "sha256": "042af81ab8f8ef28ac0c8206d6ecb4af5d3ddcc0ce57affd2ae6736c92d9e2fb"
+        },
+        {
+          "path": "archive/web/v2.0.0/tsconfig.web.json",
+          "bytes": 366,
+          "sha256": "193a9e4348e429685b4880d781af7afa45319e58835f4b2e9ae784b98942760e"
+        },
+        {
+          "path": "archive/web/v2.0.0/vite.cloudflare.config.ts",
+          "bytes": 269,
+          "sha256": "707f95035a95270f5cda58f8f5591ce0e6c9b2279672a3ac33edab5524feca84"
+        },
+        {
+          "path": "archive/web/v2.0.0/web/index.html",
+          "bytes": 667,
+          "sha256": "68d755f21e7308478872e71c785204d0d855df49cefa488676ab064e8bf6f310"
+        },
+        {
+          "path": "archive/web/v2.0.0/web/main.tsx",
+          "bytes": 41896,
+          "sha256": "6a603c3916858ac1485c849d169ddd932d3e7e190a584810afc12d9185c27899"
+        },
+        {
+          "path": "archive/web/v2.0.0/web/public/downloads/socket_bridge.py",
+          "bytes": 10133,
+          "sha256": "6d77d30b29702ef700f002b4f2ba4e809ae69acb1b51508e42a28c7d4c2c0ecf"
+        },
+        {
+          "path": "archive/web/v2.0.0/web/public/downloads/接入说明.txt",
+          "bytes": 2858,
+          "sha256": "ca0f555b04b9f19ba05e78063f9658d82255cd5e723cff884d977b9a74c7e3c0"
+        },
+        {
+          "path": "archive/web/v2.0.0/web/style.css",
+          "bytes": 31388,
+          "sha256": "49c77fa64387d92b3f787f1cf200cff148dfd30db0c9c8bb31137391bfd1182c"
+        },
+        {
+          "path": "archive/web/v2.0.0/worker/index.ts",
+          "bytes": 20374,
+          "sha256": "45b425061ced5be7988f710988312a0c7d7103fe5cdaf217de606075feb5fd14"
+        },
+        {
+          "path": "archive/web/v2.0.0/wrangler.jsonc",
+          "bytes": 541,
+          "sha256": "2f704af7255290f416d09e4370b9b1a33345e29ef736008630776ef340e20d64"
+        },
+        {
+          "path": "archive/web/v2.0.0/已发布网页预览.png",
+          "bytes": 134623,
+          "sha256": "e8dfca449951ac79f6fc89f9b7bdd81ea9fe46939e57899e879f9d7112889eda"
+        },
+        {
+          "path": "archive/web/v2.0.0/部署验证.json",
+          "bytes": 470,
+          "sha256": "1ca345f61b068751b49cd8b7fc1916f3e86a176cca3038649f15eb3d6b7cf7df"
+        }
+      ]
     }
   ],
   "raw_daily_capture_included": false,
-  "private_runtime_included": false
+  "private_runtime_included": false,
+  "updated_date": "2026-10-27"
 }

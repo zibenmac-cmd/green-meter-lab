@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-27",
+  "url": "https://green-meter-lab-v2.ziben-mac.workers.dev",
+  "health": {
+    "ok": true,
+    "version": "2.0.0",
+    "storage": "Cloudflare D1",
+    "privateData": true
+  },
+  "home_status": 200,
+  "private_api_without_auth": 401,
+  "admin_login": 200,
+  "records": 0,
+  "kwh": 0,
+  "devices": 0,
+  "learning_captures": 0,
+  "model_enabled": false,
+  "notes": "生产环境未导入本机合成测试数据，未进行本次实物连接。"
+}
