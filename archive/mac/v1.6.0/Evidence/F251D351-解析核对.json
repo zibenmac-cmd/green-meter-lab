@@ -1,0 +1,22 @@
+{
+  "capture_test_id": "F251D351-6160-41B0-A4A8-79E9609346A7",
+  "source": "real_capture_file_replay_NOT_live",
+  "host": "192.168.1.2",
+  "port": 8266,
+  "started_at": "2026-10-19T14:53:20Z",
+  "ended_at": "2026-10-19T14:53:25Z",
+  "sha256": "f68a7366b80d76643a9cad2949d91a30f0b2e8874cddbee6e0b807272e2f6aad",
+  "bytes": 126906,
+  "valid_frames": 242,
+  "invalid_candidates": 0,
+  "discarded_bytes": 1550,
+  "samples_per_channel": 30976,
+  "wire_format": "68 | LE16(512) | int16le[128] channel1 | int16le[128] channel2 | LE16(sum(length+256 words) mod 65536) | 11",
+  "sample_rate_verified": false,
+  "physical_calibration_verified": false,
+  "device_identity_verified": false,
+  "trailer_high_bytes": {
+    "16": 237,
+    "15": 5
+  }
+}

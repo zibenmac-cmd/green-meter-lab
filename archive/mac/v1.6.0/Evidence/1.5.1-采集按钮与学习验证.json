@@ -1,0 +1,61 @@
+{
+  "calibrated": false,
+  "energy_kwh": null,
+  "frames": 1460,
+  "known_match": {
+    "appliance": "模拟台灯-仅本机测试",
+    "distance": 1.8599602712726795e-15,
+    "key": "E20DEB39-C9EE-4FCD-909B-9DE97221F156|running",
+    "reason": "仅在已学习范围内匹配；不能证明供电继电器状态",
+    "state": "运行"
+  },
+  "model_restored": true,
+  "native_capture_seconds": 20.978176951408386,
+  "native_capture_windows": 21,
+  "notes": "本机 TCP 与人工合成样本的功能验证；不代表真实电器识别准确率。未连接真实插座，未切换 Wi-Fi。",
+  "off_name_suppressed": true,
+  "partial_capture_rejected": true,
+  "production_isolated": true,
+  "replay_learning_rejected": true,
+  "saved_raw_bytes": 756280,
+  "source": "loopback_synthetic_NOT_hardware",
+  "synthetic_training_segments": 6,
+  "unknown_rejected": true,
+  "validation": {
+    "balancedAccuracy": 1,
+    "classes": [
+      {
+        "correct": 61,
+        "rejected": 0,
+        "title": "模拟台灯-仅本机测试 · 运行",
+        "total": 61
+      },
+      {
+        "correct": 60,
+        "rejected": 0,
+        "title": "关闭样本（不判断电器名称）",
+        "total": 60
+      }
+    ],
+    "correct": 121,
+    "eligibleCaptureIDs": [
+      "6E833EBF-0235-4A46-91EE-457A9AD2C110",
+      "1BF5C6AD-3CE2-40AE-8694-54037A226CAC",
+      "B0D96B83-2EEF-4F00-ACEF-275B73C2D62B",
+      "03D014FE-ADD7-47D1-A538-6A848012EFF4",
+      "0BC9F273-04A5-48D4-82C4-74EE525B3528",
+      "F9682C5D-AFBB-4B19-8168-37FFEBB6F924"
+    ],
+    "excludedIncompleteLabels": [],
+    "folds": 3,
+    "method": "按完整采集段留出交叉验证；未知计为错误。该结果不代表跨天、跨设备或未见电器准确率。",
+    "passed": true,
+    "rejected": 0,
+    "total": 121
+  },
+  "server": {
+    "source": "loopback_synthetic_NOT_hardware",
+    "frames": 1461,
+    "commands_hex": ""
+  }
+}

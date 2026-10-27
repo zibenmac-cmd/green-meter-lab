@@ -1,0 +1,35 @@
+{
+  "app" : "Green Meter Mac",
+  "bytes_received" : 491181,
+  "calibrated" : false,
+  "captured_points" : 128,
+  "device_id" : "",
+  "discarded_bytes" : 3743,
+  "hardware" : {
+
+  },
+  "integrity" : "68 · 512 字节 · 16 位累加校验通过 · 尾字节 11",
+  "invalid_frames" : 0,
+  "metrics" : {
+
+  },
+  "notes" : "socket128 依据 F251D351 实测文件验证帧头、长度、累加校验和尾字节。实际采样率、通道物理换算与标定仍待核对。",
+  "protocol" : "socket128",
+  "raw_metrics" : {
+    "count" : 128,
+    "currentRMS" : 2.5602123935330052,
+    "durationS" : 0.02,
+    "units" : "ADC counts",
+    "voltageRMS" : 118.51025140256854,
+    "warnings" : [
+      "当前显示原始 ADC 计数，包含直流零点；不能直接当作 V、A 或 W。",
+      "通道换算、零点及实际采样率仍需与参考仪表核对；暂不判断负载开关或累计用电量。"
+    ]
+  },
+  "raw_samples" : true,
+  "sample_rate_configured" : 6400,
+  "source" : "设备采集 · 原始 ADC（待标定）",
+  "status" : "未连接",
+  "valid_frames" : 941,
+  "version" : "1.1.0"
+}

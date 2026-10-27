@@ -1,0 +1,8 @@
+PASS: 30 protocol, waveform, CSV, state and configuration checks. No hardware connected.
+PASS TOTAL: 51 checks, including unmodified F251D351 real capture. Live integration still requires a new physical-device run.
+PASS FINAL: 74 checks including persistence, offline queue, recovery and mirror. Mock Drive only.
+Test artifacts: /var/folders/3p/xcxlz6cs5dgbv1bpjqv2hq140000gn/T/green-meter-120-tests-93144707-8B61-43EF-849D-26EF222DAFBC
+PASS: 84 checks including exact command bytes; no hardware commands sent.
+PASS TOTAL: 105 checks including active watts, offsets, phase and single-point reference fitting.
+PASS: appliance-learning features, grouped validation, unknown rejection, persistence and mock backup. Synthetic only.
+PASS TOTAL: 135 checks including appliance learning

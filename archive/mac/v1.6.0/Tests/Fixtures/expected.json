@@ -1,0 +1,8 @@
+{
+  "simulation": true,
+  "sample_rate_configured": 6400,
+  "sample_count": 640,
+  "voltage_rms": 229.9998504860643,
+  "current_rms": 1.9984539558009513,
+  "power_w": 459.4235047854456
+}

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDisplayName</key>
+	<string>绿电实验室 Mac 电表监测</string>
+	<key>CFBundleExecutable</key>
+	<string>GreenMeterMac</string>
+	<key>CFBundleIconFile</key>
+	<string>AppIcon</string>
+	<key>CFBundleIdentifier</key>
+	<string>local.greenmeter.monitor</string>
+	<key>CFBundleName</key>
+	<string>绿电实验室</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.6.0</string>
+	<key>CFBundleVersion</key>
+	<string>160</string>
+	<key>LSMinimumSystemVersion</key>
+	<string>13.0</string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsLocalNetworking</key>
+		<true/>
+	</dict>
+	<key>NSHighResolutionCapable</key>
+	<true/>
+	<key>NSHumanReadableCopyright</key>
+	<string>本地协议移植版。设备协议依据用户提供的 iSocket 源码与 YS8000 手册。</string>
+	<key>NSLocalNetworkUsageDescription</key>
+	<string>连接你选择的智能插座，或在所选本机地址监听设备发送的电压、电流数据。</string>
+</dict>
+</plist>

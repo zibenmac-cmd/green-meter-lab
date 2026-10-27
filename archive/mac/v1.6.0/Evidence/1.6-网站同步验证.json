@@ -1,0 +1,7 @@
+{
+  "checks" : 58,
+  "hardware_verified" : false,
+  "passed" : true,
+  "production_data_uploaded" : false,
+  "source" : "local_synthetic_cloud_sync_test_NOT_hardware"
+}
