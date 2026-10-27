@@ -4,7 +4,8 @@
 
 ## 从哪里开始
 
-- **当前 Web 2.0：** [正式网站](https://green-meter-lab-v2.ziben-mac.workers.dev/)、[源码与部署说明](archive/web/v2.0.0/README-WEB.md)、[源码包](releases/绿电实验室Web版-2.0.0-源码.zip)。
+- **当前 Web 2.1：** [正式网站](https://green-meter-lab-v2.ziben-mac.workers.dev/)、[源码与部署说明](archive/web/v2.1.0/README-WEB.md)、[源码包](releases/绿电实验室Web版-2.1.0-源码.zip)。
+
 
 - **当前 Mac 版：** [1.5.1 源码](archive/mac/v1.5.1/Source/)、[使用说明](archive/mac/v1.5.1/使用说明.md)、[测试报告](archive/mac/v1.5.1/测试报告.md)。
 - **全部安装包：** [releases](releases/)，包含 Mac 1.0–1.5.1、独立 IP 测试器、离线连接工具、早期接入包及网页源码包。
@@ -16,6 +17,8 @@
 1.5.1 修复采集按钮无反馈：没有实时数据时点击会说明原因，并提供就近连接入口。真实采样仍需先接收有效波形。
 
 ## 当前功能和限制
+
+Web 2.1 于 2026-10-27 发布到用户自己的 Cloudflare Workers + D1。新增按楼层编号管理、楼层分析、前后对照、试算排行和活动记录，保留私有真实数据和单插座学习。正式环境暂未接入设备，演示与真实数据隔离；本机 Python 采集桥保留原始 BIN 和断网队列。浏览器不直接连接局域网 TCP，供电操作继续由设备或原 Mac 软件人工确认。
 
 Web 2.0 于 2026-10-27 发布到用户自己的 Cloudflare Workers + D1。新增清晰的中文能源工作台、历史用电、大功率使用时长排名、优化建议、私有真实数据和单插座学习。正式环境暂未接入设备，演示与真实数据隔离；本机 Python 采集桥保留原始 BIN 和断网队列。浏览器不直接连接局域网 TCP，供电操作继续由设备或原 Mac 软件人工确认。
 

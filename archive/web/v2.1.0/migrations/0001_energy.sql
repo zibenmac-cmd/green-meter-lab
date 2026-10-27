@@ -1,0 +1,10 @@
+CREATE TABLE IF NOT EXISTS settings_v2 (id TEXT PRIMARY KEY,value TEXT NOT NULL);
+CREATE TABLE IF NOT EXISTS readings_v2 (device_id TEXT NOT NULL,timestamp INTEGER NOT NULL,session_id TEXT NOT NULL,power REAL,energy REAL,quality TEXT NOT NULL,appliance_id TEXT,state TEXT NOT NULL DEFAULT 'unknown',state_source TEXT NOT NULL DEFAULT 'unknown',PRIMARY KEY(device_id,timestamp));
+CREATE INDEX IF NOT EXISTS readings_v2_time ON readings_v2(timestamp);
+CREATE TABLE IF NOT EXISTS appliances_v2 (id TEXT PRIMARY KEY,name TEXT NOT NULL,rated_power REAL NOT NULL DEFAULT 0,created_at TEXT NOT NULL);
+CREATE TABLE IF NOT EXISTS live_v2 (device_id TEXT PRIMARY KEY,payload TEXT NOT NULL,received_at INTEGER NOT NULL);
+CREATE TABLE IF NOT EXISTS capture_jobs_v2 (id TEXT PRIMARY KEY,appliance_id TEXT NOT NULL,state TEXT NOT NULL,started_at INTEGER NOT NULL,ends_at INTEGER NOT NULL,status TEXT NOT NULL DEFAULT 'capturing',profile TEXT NOT NULL);
+CREATE TABLE IF NOT EXISTS capture_windows_v2 (job_id TEXT NOT NULL,timestamp INTEGER NOT NULL,payload TEXT NOT NULL,PRIMARY KEY(job_id,timestamp));
+CREATE TABLE IF NOT EXISTS captures_v2 (id TEXT PRIMARY KEY,profile TEXT NOT NULL,payload TEXT NOT NULL,excluded INTEGER NOT NULL DEFAULT 0,created_at INTEGER NOT NULL);
+CREATE TABLE IF NOT EXISTS models_v2 (id TEXT PRIMARY KEY,profile TEXT NOT NULL,payload TEXT NOT NULL,created_at INTEGER NOT NULL);
+CREATE TABLE IF NOT EXISTS login_attempts_v2 (id TEXT PRIMARY KEY,attempts INTEGER NOT NULL,expires_at INTEGER NOT NULL);

@@ -2560,6 +2560,166 @@
           "sha256": "1ca345f61b068751b49cd8b7fc1916f3e86a176cca3038649f15eb3d6b7cf7df"
         }
       ]
+    },
+    {
+      "name": "Web 2.1：Cloudflare 楼层能源工作台",
+      "tag": "web-v2.1.0",
+      "source": "archive/web/v2.1.0",
+      "package": "releases/绿电实验室Web版-2.1.0-源码.zip",
+      "bytes": 161415,
+      "sha256": "5b0f836f0c233d85b4fa3ae83c02c17788196f8206883a69f96240eb94360e5a",
+      "extracted_files": [
+        {
+          "path": "archive/web/v2.1.0/.gitignore",
+          "bytes": 772,
+          "sha256": "1f80d8aa0e008001179cd16ac0e03ac134e5f4f948892ca49e51b21d21527548"
+        },
+        {
+          "path": "archive/web/v2.1.0/README-WEB.md",
+          "bytes": 7986,
+          "sha256": "b640a3b001b509eb5b0559cbb4fa23b95923e97a92ffbb937491eb014a7b44be"
+        },
+        {
+          "path": "archive/web/v2.1.0/adapters/socket_bridge_v2.py",
+          "bytes": 10133,
+          "sha256": "6d77d30b29702ef700f002b4f2ba4e809ae69acb1b51508e42a28c7d4c2c0ecf"
+        },
+        {
+          "path": "archive/web/v2.1.0/lib/campus-v21.mjs",
+          "bytes": 6854,
+          "sha256": "8f2f9492f17dfadb554d4c74e605d3fa6b81f29544ea324321ce4aa2ca3a388d"
+        },
+        {
+          "path": "archive/web/v2.1.0/lib/energy-v2.mjs",
+          "bytes": 10784,
+          "sha256": "e0ca3e3907a454de96bfbfb13087564cf64c333a0e800f7d48a54d0053376ebd"
+        },
+        {
+          "path": "archive/web/v2.1.0/lib/learning-v2.mjs",
+          "bytes": 6225,
+          "sha256": "00d86e504d306d75d2b15040bbf7e7d1423541fa197d1ecd5f09ce39e6a0fffc"
+        },
+        {
+          "path": "archive/web/v2.1.0/lib/power-forecast.mjs",
+          "bytes": 3524,
+          "sha256": "94a256a0c54921d306f2c77cd08a97f12b7e22cd2126fc9404b388bb9fda7214"
+        },
+        {
+          "path": "archive/web/v2.1.0/migrations/0001_energy.sql",
+          "bytes": 1512,
+          "sha256": "c547e99f1aed0f2de54ab5aeaf597b27d5fbb941ef055fe30a00a80de45c8805"
+        },
+        {
+          "path": "archive/web/v2.1.0/migrations/0002_campus.sql",
+          "bytes": 1803,
+          "sha256": "085d19e886aeacddbe0bffbaea8e5a0b679f6d136a34cb304d7e0366a55cab6e"
+        },
+        {
+          "path": "archive/web/v2.1.0/package.json",
+          "bytes": 889,
+          "sha256": "88905478b0aa9428d6079f15aef4910bb916c3d39a9dd87b1ef6e8e9a64b25fc"
+        },
+        {
+          "path": "archive/web/v2.1.0/pnpm-lock.yaml",
+          "bytes": 58678,
+          "sha256": "ebe72f02181e88c104748c7efd9e6cd6c8f532c22753f9269e4a15af0cae5ef4"
+        },
+        {
+          "path": "archive/web/v2.1.0/tests/web-v2/api.local.mjs",
+          "bytes": 4828,
+          "sha256": "b8f0a2b23e0a197831eb971bd07db484805253edfb38a530ec4781173e31c128"
+        },
+        {
+          "path": "archive/web/v2.1.0/tests/web-v2/campus-api.local.mjs",
+          "bytes": 3981,
+          "sha256": "f7c39b3fdca6b00cddbd69aa0a3ef5fde0e735d030c031300351bff47655723d"
+        },
+        {
+          "path": "archive/web/v2.1.0/tests/web-v2/campus.test.mjs",
+          "bytes": 3110,
+          "sha256": "62914ea62e72fcefb31559e796d5cefb9f3b9a79ee570176998714b5af5ce9c5"
+        },
+        {
+          "path": "archive/web/v2.1.0/tests/web-v2/energy.test.mjs",
+          "bytes": 4126,
+          "sha256": "b6a6316d91b6cbd5c59fd39283a2ec503327e71019d02709ea222a13939802a5"
+        },
+        {
+          "path": "archive/web/v2.1.0/tests/web-v2/learning.test.mjs",
+          "bytes": 2298,
+          "sha256": "042af81ab8f8ef28ac0c8206d6ecb4af5d3ddcc0ce57affd2ae6736c92d9e2fb"
+        },
+        {
+          "path": "archive/web/v2.1.0/tsconfig.web.json",
+          "bytes": 366,
+          "sha256": "193a9e4348e429685b4880d781af7afa45319e58835f4b2e9ae784b98942760e"
+        },
+        {
+          "path": "archive/web/v2.1.0/vite.cloudflare.config.ts",
+          "bytes": 269,
+          "sha256": "707f95035a95270f5cda58f8f5591ce0e6c9b2279672a3ac33edab5524feca84"
+        },
+        {
+          "path": "archive/web/v2.1.0/web/campus.css",
+          "bytes": 9996,
+          "sha256": "d9bc9fa63c94d7e6e790666a7e5d900e2232d84fc08c8819e655f2673bffd5cc"
+        },
+        {
+          "path": "archive/web/v2.1.0/web/campus.tsx",
+          "bytes": 25347,
+          "sha256": "b2a48832e57c18d23ac2e8632e171c610ddc0ea087426329aa3c6722bde89e75"
+        },
+        {
+          "path": "archive/web/v2.1.0/web/index.html",
+          "bytes": 667,
+          "sha256": "68d755f21e7308478872e71c785204d0d855df49cefa488676ab064e8bf6f310"
+        },
+        {
+          "path": "archive/web/v2.1.0/web/main.tsx",
+          "bytes": 45041,
+          "sha256": "077dd6ab5b9de865095a9ff2365f0f035b12362a068d78780f456fead695173a"
+        },
+        {
+          "path": "archive/web/v2.1.0/web/public/downloads/socket_bridge.py",
+          "bytes": 10133,
+          "sha256": "6d77d30b29702ef700f002b4f2ba4e809ae69acb1b51508e42a28c7d4c2c0ecf"
+        },
+        {
+          "path": "archive/web/v2.1.0/web/public/downloads/接入说明.txt",
+          "bytes": 2858,
+          "sha256": "ca0f555b04b9f19ba05e78063f9658d82255cd5e723cff884d977b9a74c7e3c0"
+        },
+        {
+          "path": "archive/web/v2.1.0/web/style.css",
+          "bytes": 31388,
+          "sha256": "49c77fa64387d92b3f787f1cf200cff148dfd30db0c9c8bb31137391bfd1182c"
+        },
+        {
+          "path": "archive/web/v2.1.0/worker/campus.ts",
+          "bytes": 7494,
+          "sha256": "4931be82b7ba0c73af4faeac5f58f054f3193405f286c54590231ab35e406489"
+        },
+        {
+          "path": "archive/web/v2.1.0/worker/index.ts",
+          "bytes": 21672,
+          "sha256": "110385704cbe8a48b0e2275c9d7721be5d42b92c3f2e856f3baeea61c3c9e9c8"
+        },
+        {
+          "path": "archive/web/v2.1.0/wrangler.jsonc",
+          "bytes": 541,
+          "sha256": "2f704af7255290f416d09e4370b9b1a33345e29ef736008630776ef340e20d64"
+        },
+        {
+          "path": "archive/web/v2.1.0/楼层版-已发布预览.png",
+          "bytes": 78639,
+          "sha256": "818f0fc1a77951aacf6d0b8b3dc71ee4d4b43e0066937959494632785af3263a"
+        },
+        {
+          "path": "archive/web/v2.1.0/部署验证-2.1.json",
+          "bytes": 576,
+          "sha256": "d45e5fb3afa6a63c9a55aaee979d8abe938c95bd6bd75e108df1d3143adea29e"
+        }
+      ]
     }
   ],
   "raw_daily_capture_included": false,

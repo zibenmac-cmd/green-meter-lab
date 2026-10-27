@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-27",
+  "version": "2.1.0",
+  "url": "https://green-meter-lab-v2.ziben-mac.workers.dev",
+  "private_api_without_auth": 401,
+  "admin_login": 200,
+  "floors": 0,
+  "devices": 0,
+  "activities": 0,
+  "qualified_floors": 0,
+  "recorded_floor_kwh": 0,
+  "unit_tests": 23,
+  "local_api_tests": "floor registration / history / total-submeter separation / effect gates / activity idempotency; original capture and learning regression passed",
+  "notes": "正式站点未写入演示楼层或本机测试记录；物理瓦数与实际电器仍需现场验证。"
+}
